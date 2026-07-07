@@ -86,4 +86,17 @@ DefaultProperties
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_HRGCrossbowEx',DefaultWeapon=class'KFGameContent.KFWeap_Bow_Crossbow'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Pistol_G18CEx',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_G18C'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Pistol_DualG18Ex',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualG18'))
+
+	// SWAT
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_MP7Ex',DefaultWeapon=class'KFGameContent.KFWeap_SMG_MP7'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_P90Ex',DefaultWeapon=class'KFGameContent.KFWeap_SMG_P90'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_KrissEx',DefaultWeapon=class'KFGameContent.KFWeap_SMG_Kriss'))
+
+	// Support
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_S12Ex',DefaultWeapon=class'KFGameContent.KFWeap_Shotgun_S12'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DoubleBarrelEx',DefaultWeapon=class'KFGameContent.KFWeap_Shotgun_DoubleBarrel'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_HZ12Ex',DefaultWeapon=class'KFGameContent.KFWeap_Shotgun_HZ12'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_M4Ex',DefaultWeapon=class'KFGameContent.KFWeap_Shotgun_M4'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AA12Ex',DefaultWeapon=class'KFGameContent.KFWeap_Shotgun_AA12'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_ElephantGunEx',DefaultWeapon=class'KFGameContent.KFWeap_Shotgun_ElephantGun'))
 }
