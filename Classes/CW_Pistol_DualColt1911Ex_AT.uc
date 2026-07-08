@@ -24,10 +24,20 @@ reliable client function ClientSetAltFire(bool bAltFire)
 	bUseAltFireMode = bAltFire;
 }
 
+simulated state WeaponFiring
+{
+	simulated function FireAmmunition()
+	{
+		bFireFromRightWeapon = !bFireFromRightWeapon;
+		Super.FireAmmunition();
+	}
+}
+
 DefaultProperties
 {
 	// ALTFIRE_FIREMODE already mirrors DEFAULT_FIREMODE stats in the base class,
-	// only the firing state needs to switch to full-auto
+	// only the firing state/icon need to switch to full-auto
+	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'
 	FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
 
 	SingleClass=class'CWP.CW_Pistol_Colt1911Ex_AT'

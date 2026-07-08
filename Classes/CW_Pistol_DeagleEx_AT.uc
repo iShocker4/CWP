@@ -27,6 +27,7 @@ reliable client function ClientSetAltFire(bool bAltFire)
 DefaultProperties
 {
 	// ALTFIRE_FIREMODE — full-auto toggle, same stats as DEFAULT_FIREMODE
+	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'
 	FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
 	WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_InstantHit
 	WeaponProjectiles(ALTFIRE_FIREMODE)=class'KFProj_Bullet_Pistol50AE'
