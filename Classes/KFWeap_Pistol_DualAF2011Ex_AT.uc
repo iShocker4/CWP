@@ -1,11 +1,11 @@
-class CW_Pistol_DualColt1911Ex_AT extends CW_Pistol_DualColt1911Ex;
+class KFWeap_Pistol_DualAF2011Ex_AT extends KFWeap_Pistol_DualAF2011Ex;
 
 var private bool bServerFiringMode;
 
 function SetOriginalValuesFromPickup(KFWeapon PickedUpWeapon)
 {
 	super.SetOriginalValuesFromPickup(PickedUpWeapon);
-	ClientSetAltFire(CW_Pistol_DualColt1911Ex_AT(PickedUpWeapon).bServerFiringMode);
+	ClientSetAltFire(KFWeap_Pistol_DualAF2011Ex_AT(PickedUpWeapon).bServerFiringMode);
 }
 
 simulated function AltFireMode()
@@ -35,11 +35,16 @@ simulated state WeaponFiring
 
 DefaultProperties
 {
-	// ALTFIRE_FIREMODE already mirrors DEFAULT_FIREMODE stats in the base class,
-	// only the firing state/icon need to switch to full-auto
 	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'
 	FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
-	FireInterval(ALTFIRE_FIREMODE)=+0.12
+	WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_InstantHit
+	WeaponProjectiles(ALTFIRE_FIREMODE)=class'KFProj_Bullet_PistolAF2011'
+	InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'KFDT_Ballistic_AF2011Ex'
+	FireInterval(ALTFIRE_FIREMODE)=+0.13
+	InstantHitDamage(ALTFIRE_FIREMODE)=53
+	PenetrationPower(ALTFIRE_FIREMODE)=1.5
+	Spread(ALTFIRE_FIREMODE)=0.01
+	AmmoCost(ALTFIRE_FIREMODE)=2
 
-	SingleClass=class'CWP.CW_Pistol_Colt1911Ex_AT'
+	SingleClass=class'CWP.KFWeap_Pistol_AF2011Ex_AT'
 }

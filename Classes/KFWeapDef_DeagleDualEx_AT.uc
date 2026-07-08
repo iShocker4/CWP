@@ -2,8 +2,8 @@ class KFWeapDef_DeagleDualEx_AT extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*RPM: 545 -> 530"
-		$ "\n*Right-click to toggle full-auto fire mode";
+	return Localize("KFWeap_Pistol_DualDeagle", "ItemDescription", "KFGameContent")
+		$ "\n*Add:Switch full-auto fire mode";
 }
 
 DefaultProperties

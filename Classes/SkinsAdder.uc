@@ -62,6 +62,8 @@ DefaultProperties
 
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011Ex',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_AF2011'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011DualEx',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualAF2011'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011Ex_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_AF2011'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011DualEx_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualAF2011'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_FNFal_4x',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_FNFal'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_FNFal_4xMeme',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_FNFal'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_FNFalCM_2x',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_FNFal'))
@@ -75,6 +77,8 @@ DefaultProperties
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Colt1911DualEx_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualColt1911'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_SW500Ex',DefaultWeapon=class'KFGameContent.KFWeap_Revolver_SW500'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_SW500DualEx',DefaultWeapon=class'KFGameContent.KFWeap_Revolver_DualSW500'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_SW500Ex_AT',DefaultWeapon=class'KFGameContent.KFWeap_Revolver_SW500'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_SW500DualEx_AT',DefaultWeapon=class'KFGameContent.KFWeap_Revolver_DualSW500'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_CenterfireMB464Ex',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_CenterfireMB464'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_M14EBREx',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_M14EBR'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_MosinNagantEx',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_MosinNagant'))

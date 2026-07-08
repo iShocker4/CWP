@@ -1,11 +1,11 @@
-class CW_Pistol_DualColt1911Ex_AT extends CW_Pistol_DualColt1911Ex;
+class CW_Revolver_DualSW500Ex_AT extends CW_Revolver_DualSW500Ex;
 
 var private bool bServerFiringMode;
 
 function SetOriginalValuesFromPickup(KFWeapon PickedUpWeapon)
 {
 	super.SetOriginalValuesFromPickup(PickedUpWeapon);
-	ClientSetAltFire(CW_Pistol_DualColt1911Ex_AT(PickedUpWeapon).bServerFiringMode);
+	ClientSetAltFire(CW_Revolver_DualSW500Ex_AT(PickedUpWeapon).bServerFiringMode);
 }
 
 simulated function AltFireMode()
@@ -35,11 +35,8 @@ simulated state WeaponFiring
 
 DefaultProperties
 {
-	// ALTFIRE_FIREMODE already mirrors DEFAULT_FIREMODE stats in the base class,
-	// only the firing state/icon need to switch to full-auto
 	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'
 	FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
-	FireInterval(ALTFIRE_FIREMODE)=+0.12
 
-	SingleClass=class'CWP.CW_Pistol_Colt1911Ex_AT'
+	SingleClass=class'CWP.CW_Revolver_SW500Ex_AT'
 }
