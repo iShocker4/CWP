@@ -35,7 +35,7 @@ function bool DenyPickupQuery(class<Inventory> ItemClass, Actor Pickup)
 
 DefaultProperties
 {
-	DroppedPickupClass=class'CW_DroppedPickup_Ex'
+	// DroppedPickupClass=class'CW_DroppedPickup_Ex'
 	SecondaryAmmoTextureDisableLockOn=Texture2D'Custom_UI_SecondaryAmmo_TEX.MedicDarts'
 	InitialSpareMags[0]=0
 	LockChecktime=0.025

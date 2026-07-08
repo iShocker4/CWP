@@ -31,7 +31,7 @@ reliable client function ClientSetAltFire(bool bAltFire)
 
 DefaultProperties
 {
-	DroppedPickupClass=class'CW_DroppedPickup_Ex'
+	// DroppedPickupClass=class'CW_DroppedPickup_Ex'
 	InitialSpareMags[0]=0
 	maxRecoilPitch=115
 	minRecoilPitch=115
