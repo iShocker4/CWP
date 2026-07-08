@@ -24,6 +24,54 @@ reliable client function ClientSetAltFire(bool bAltFire)
 	bUseAltFireMode = bAltFire;
 }
 
+simulated function InstantFireClient()
+{
+	local vector StartTrace, EndTrace;
+	local rotator AimRot;
+	local array<ImpactInfo> ImpactList;
+	local int Idx;
+	local ImpactInfo RealImpact;
+	local float CurPenetrationValue;
+	local byte FlashFireMode;
+
+	bInstantHit = true;
+
+	StartTrace = GetSafeStartTraceLocation();
+	AimRot = GetAdjustedAim(StartTrace);
+	EndTrace = StartTrace + vector(AimRot) * GetTraceRange();
+
+	bInstantHit = false;
+
+	PenetrationPowerRemaining = GetInitialPenetrationPower(CurrentFireMode);
+	CurPenetrationValue = PenetrationPowerRemaining;
+	RealImpact = CalcWeaponFire(StartTrace, EndTrace, ImpactList);
+
+	if (Instigator != None)
+	{
+		FlashFireMode = CurrentFireMode;
+		if (CurrentFireMode == ALTFIRE_FIREMODE)
+		{
+			FlashFireMode = DEFAULT_FIREMODE;
+		}
+		Instigator.SetFlashLocation(self, FlashFireMode, RealImpact.HitLocation);
+	}
+
+	if (Instigator != None && Instigator.IsLocallyControlled())
+	{
+		InstantFireClient_AddImpacts(StartTrace, AimRot, ImpactList);
+
+		for (Idx = 0; Idx < ImpactList.Length; Idx++)
+		{
+			ProcessInstantHitEx(CurrentFireMode, ImpactList[Idx],, CurPenetrationValue, Idx);
+		}
+
+		if (Instigator.Role < ROLE_Authority)
+		{
+			SendClientImpactList(CurrentFireMode, ImpactList);
+		}
+	}
+}
+
 DefaultProperties
 {
 	// ALTFIRE_FIREMODE — full-auto toggle, same stats as DEFAULT_FIREMODE
@@ -36,6 +84,8 @@ DefaultProperties
 	InstantHitDamage(ALTFIRE_FIREMODE)=91.0
 	PenetrationPower(ALTFIRE_FIREMODE)=2.0
 	Spread(ALTFIRE_FIREMODE)=0.01
+	WeaponFireSnd(ALTFIRE_FIREMODE)=(DefaultCue=AkEvent'WW_WEP_SA_DesertEagle.Play_WEP_SA_DesertEagle_Fire_Single_M', FirstPersonCue=AkEvent'WW_WEP_SA_DesertEagle.Play_WEP_SA_DesertEagle_Fire_Single_S')
+	WeaponDryFireSnd(ALTFIRE_FIREMODE)=AkEvent'WW_WEP_SA_DesertEagle.Play_WEP_SA_DesertEagle_Handling_DryFire'
 
 	DualClass=class'CWP.CW_Pistol_DualDeagleEx_AT'
 }

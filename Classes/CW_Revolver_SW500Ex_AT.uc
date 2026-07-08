@@ -24,6 +24,54 @@ reliable client function ClientSetAltFire(bool bAltFire)
 	bUseAltFireMode = bAltFire;
 }
 
+simulated function InstantFireClient()
+{
+	local vector StartTrace, EndTrace;
+	local rotator AimRot;
+	local array<ImpactInfo> ImpactList;
+	local int Idx;
+	local ImpactInfo RealImpact;
+	local float CurPenetrationValue;
+	local byte FlashFireMode;
+
+	bInstantHit = true;
+
+	StartTrace = GetSafeStartTraceLocation();
+	AimRot = GetAdjustedAim(StartTrace);
+	EndTrace = StartTrace + vector(AimRot) * GetTraceRange();
+
+	bInstantHit = false;
+
+	PenetrationPowerRemaining = GetInitialPenetrationPower(CurrentFireMode);
+	CurPenetrationValue = PenetrationPowerRemaining;
+	RealImpact = CalcWeaponFire(StartTrace, EndTrace, ImpactList);
+
+	if (Instigator != None)
+	{
+		FlashFireMode = CurrentFireMode;
+		if (CurrentFireMode == ALTFIRE_FIREMODE)
+		{
+			FlashFireMode = DEFAULT_FIREMODE;
+		}
+		Instigator.SetFlashLocation(self, FlashFireMode, RealImpact.HitLocation);
+	}
+
+	if (Instigator != None && Instigator.IsLocallyControlled())
+	{
+		InstantFireClient_AddImpacts(StartTrace, AimRot, ImpactList);
+
+		for (Idx = 0; Idx < ImpactList.Length; Idx++)
+		{
+			ProcessInstantHitEx(CurrentFireMode, ImpactList[Idx],, CurPenetrationValue, Idx);
+		}
+
+		if (Instigator.Role < ROLE_Authority)
+		{
+			SendClientImpactList(CurrentFireMode, ImpactList);
+		}
+	}
+}
+
 DefaultProperties
 {
 	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'
@@ -35,6 +83,8 @@ DefaultProperties
 	InstantHitDamage(ALTFIRE_FIREMODE)=190.0
 	PenetrationPower(ALTFIRE_FIREMODE)=3.0
 	Spread(ALTFIRE_FIREMODE)=0.015
+	WeaponFireSnd(ALTFIRE_FIREMODE)=(DefaultCue=AkEvent'WW_WEP_SA_SW500.Play_WEP_SA_SW500_Fire_3P', FirstPersonCue=AkEvent'WW_WEP_SA_SW500.Play_WEP_SA_SW500_Fire_1P')
+	WeaponDryFireSnd(ALTFIRE_FIREMODE)=AkEvent'WW_WEP_SA_SW500.Play_WEP_SA_SW500_Handling_DryFire'
 
 	DualClass=class'CWP.CW_Revolver_DualSW500Ex_AT'
 }
