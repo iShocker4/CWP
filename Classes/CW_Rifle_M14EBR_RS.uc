@@ -44,7 +44,7 @@ simulated event SetWeapon()
         MinFiringPutDownPct = 0.60f;
         if (!SharpPerk.IsTacticalReloadActive())
         {
-            ReloadSpeedMod = 0.75f;
+            ReloadSpeedMod = 0.65f;
         }
         return;
     }
@@ -72,7 +72,7 @@ simulated function NotifyBeginState()
         MinFiringPutDownPct = 0.60f;
         if (!KFPerk_Sharpshooter(InstigatorPerk).IsTacticalReloadActive())
         {
-            ReloadSpeedMod = 0.75f;
+            ReloadSpeedMod = 0.65f;
         }
     }
     else
@@ -265,7 +265,7 @@ DefaultProperties
 	minRecoilPitch=225 // 200
 
 	// Damage
-	InstantHitDamage(DEFAULT_FIREMODE)=100.0 //80
+	InstantHitDamage(DEFAULT_FIREMODE)=121.0 //80
 
 	// Other
 	bIsLaserSightEnabled=true

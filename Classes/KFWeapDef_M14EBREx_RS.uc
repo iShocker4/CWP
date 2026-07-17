@@ -17,11 +17,11 @@ static function string GetItemCategory()
 
 static function string GetItemDescription()
 {
-    return "*Damage: 80 -> 100"
+    return "*Damage: 80 -> 121"
 //        $"\n*Damage: 70 -> 75"
 //        $"\n*HorizontalRecoil: -165~190 -> 0~140 (pulls right only)"
 //        $"\n*VerticalRecoil: 165-200 -> 230-230"
-        $"\n*ReloadSpeed: 25% faster";
+        $"\n*ReloadSpeed: 35% faster";
 }
 
 DefaultProperties
@@ -29,7 +29,7 @@ DefaultProperties
 	WeaponClassPath="CWP.CW_Rifle_M14EBR_RS"
 	ImagePath="WEP_UI_M14EBR_TEX.UI_WeaponSelect_SM14-EBR"
 
-	BuyPrice=20000
+	BuyPrice=30000
 	AmmoPricePerMag=60 //53
 
 	EffectiveRange=90
