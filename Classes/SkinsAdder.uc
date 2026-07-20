@@ -60,13 +60,11 @@ DefaultProperties
 	RemoteRole=ROLE_SimulatedProxy
 	bAlwaysRelevant=true
 
+	// Gunslinger
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011Ex',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_AF2011'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011DualEx',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualAF2011'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011Ex_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_AF2011'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011DualEx_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualAF2011'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_FNFal_4x',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_FNFal'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_FNFal_4xMeme',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_FNFal'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_FNFalCM_2x',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_FNFal'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleEx',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_Deagle'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleDualEx',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualDeagle'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleEx_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_Deagle'))
@@ -79,20 +77,32 @@ DefaultProperties
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_SW500DualEx',DefaultWeapon=class'KFGameContent.KFWeap_Revolver_DualSW500'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_SW500Ex_AT',DefaultWeapon=class'KFGameContent.KFWeap_Revolver_SW500'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_SW500DualEx_AT',DefaultWeapon=class'KFGameContent.KFWeap_Revolver_DualSW500'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_CenterfireMB464Ex',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_CenterfireMB464'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_M14EBREx',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_M14EBR'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_MosinNagantEx',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_MosinNagant'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_M14EBREx_RS',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_M14EBR'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_M14EBR_IS_Ex',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_M14EBR'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_CenterfireMB464Meme',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_CenterfireMB464'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_SCAREx',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_SCAR'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_SCAREx_Meme',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_SCAR'))
-	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_HRGCrossbowEx',DefaultWeapon=class'KFGameContent.KFWeap_Bow_Crossbow'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Pistol_G18CEx',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_G18C'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Pistol_DualG18Ex',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualG18'))
+
+	// Sharpshooter
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_CenterfireMB464Ex',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_CenterfireMB464'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_CenterfireMB464Meme',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_CenterfireMB464'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_M14EBREx',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_M14EBR'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_M14EBREx_RS',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_M14EBR'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_M14EBR_IS_Ex',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_M14EBR'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_MosinNagantEx',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_MosinNagant'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_CrossbowEx',DefaultWeapon=class'KFGameContent.KFWeap_Bow_Crossbow'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_CompoundBowEx',DefaultWeapon=class'KFGameContent.KFWeap_Bow_CompoundBow'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_FNFal_4x',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_FNFal'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_FNFal_4xMeme',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_FNFal'))
+
+	// Commando
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Ak12_Ex',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_AK12'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Bullpup_Ex',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_Bullpup'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_FNFalCM_2x',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_FNFal'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_SCAREx',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_SCAR'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_SCAREx_Meme',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_SCAR'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_MG3Ex',DefaultWeapon=class'KFGameContent.KFWeap_LMG_MG3'))
+
+	// Field Medic
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Hemogoblin_NoBleed_Ex',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_Hemogoblin'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_HRGCrossbowEx',DefaultWeapon=class'KFGameContent.KFWeap_Bow_Crossbow'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_MedicRifle_Ex',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_Medic'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_MedicSMG2_Ex',DefaultWeapon=class'KFGameContent.KFWeap_SMG_Medic'))
 

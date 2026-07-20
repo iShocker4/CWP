@@ -2,8 +2,9 @@ class KFWeapDef_Ak12_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 40 -> 46" $
-	"\n*Weight 6 -> 7";
+	return "*Damage: 40 -> 46"
+		$ "\n*Weight: 6 -> 7"
+		$ "\n*Burst fire recoil is steadier";
 }
 
 DefaultProperties

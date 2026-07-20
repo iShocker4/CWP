@@ -66,6 +66,6 @@ DefaultProperties
 
 	// Other
 	SingleClass=class'CWP.CW_Pistol_DeagleEx'
-	WeaponUpgrades[1]=(Stats=((Stat=EWUS_Damage0, Scale=1.25f), (Stat=EWUS_Damage1, Scale=1.25f), (Stat=EWUS_Weight, Add=2)))
+	WeaponUpgrades.Empty
 //	WeaponUpgrades[2]=(Stats=((Stat=EWUS_Damage0, Scale=1.4f), (Stat=EWUS_Damage1, Scale=1.4f), (Stat=EWUS_Weight, Add=4)))
 }

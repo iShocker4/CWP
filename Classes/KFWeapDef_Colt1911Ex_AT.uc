@@ -2,8 +2,8 @@ class KFWeapDef_Colt1911Ex_AT extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return Localize("KFWeap_Pistol_Colt1911", "ItemDescription", "KFGameContent")
-		$ "\n*Right-click to toggle full-auto fire mode";
+	return class'CWP.KFWeapDef_Colt1911Ex'.static.GetItemDescription()
+		$ "\n*Right-click toggles full-auto mode";
 }
 
 DefaultProperties

@@ -1,5 +1,10 @@
 class KFWeapDef_ElephantGunEx extends KFWeaponDefinition abstract;
 
+static function string GetItemDescription()
+{
+	return Localize("KFWeap_Shotgun_ElephantGun", "ItemDescription", "KFGameContent");
+}
+
 DefaultProperties
 {
 	WeaponClassPath="CWP.CW_Shotgun_ElephantGunEx"

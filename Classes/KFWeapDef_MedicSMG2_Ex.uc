@@ -2,11 +2,10 @@ class KFWeapDef_MedicSMG2_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*HealAmount: 15 -> 10" $
-	"\n*HealCost: 40 -> 25" $
-	"\n*Inventory slot: Primary -> Secondary" $
-	"\n*Weapon equip time: 0.45 -> 0.20" $
-	"\n*Alt fire shoots 2 darts";
+	return "*Heal amount: 15 -> 10"
+		$ "\n*Dart cost: 40 -> 25"
+		$ "\n*Alt-fire shoots 2 darts"
+		$ "\n*Secondary-slot medic SMG";
 }
 
 DefaultProperties

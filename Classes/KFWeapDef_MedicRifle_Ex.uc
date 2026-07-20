@@ -2,7 +2,7 @@ class KFWeapDef_MedicRifle_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return Localize("KFWeap_AssaultRifle_Medic", "ItemDescription", "KFGameContent");
+	return "*Vertical recoil: 105-140 -> 140-140";
 }
 
 DefaultProperties

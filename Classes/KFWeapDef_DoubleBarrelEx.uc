@@ -1,5 +1,10 @@
 class KFWeapDef_DoubleBarrelEx extends KFWeaponDefinition abstract;
 
+static function string GetItemDescription()
+{
+	return Localize("KFWeap_Shotgun_DoubleBarrel", "ItemDescription", "KFGameContent");
+}
+
 DefaultProperties
 {
 	WeaponClassPath="CWP.CW_Shotgun_DoubleBarrelEx"

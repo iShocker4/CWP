@@ -10,9 +10,9 @@ class KFWeapDef_CenterfireMB464Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 165 -> 180" $
-    "\n\n==== Sharpshooter ====" $
-	"\n*Reload speed: 20% Faster";
+	return "*Damage: 165 -> 180"
+		$ "\n*Sharpshooter/Gunslinger reload: 20% faster"
+		$ "\n*Draw and put-away are faster";
 }
 
 DefaultProperties

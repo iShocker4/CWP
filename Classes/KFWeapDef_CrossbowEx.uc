@@ -9,7 +9,7 @@ class KFWeapDef_CrossbowEx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*ReloadSpeed: 10% faster";
+	return "*Reload speed: 10% faster";
 }
 
 DefaultProperties

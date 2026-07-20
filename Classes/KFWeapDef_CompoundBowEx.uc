@@ -10,7 +10,7 @@ class KFWeapDef_CompoundBowEx extends KFWeaponDefinition abstract;
 static function string GetItemDescription()
 {
 	return "*Damage: 250 -> 300"
-		$"\n*ReloadSpeed: 10% faster";
+		$ "\n*Reload speed: 10% faster";
 }
 
 DefaultProperties

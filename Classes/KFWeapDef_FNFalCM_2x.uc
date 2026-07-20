@@ -11,14 +11,11 @@ class KFWeapDef_FNFalCM_2x extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-    return "*Damage: 70 -> 60"
-        $"\n*Scope: x4 ACOG -> x2"
-        $"\n*Penetration: 2.0 -> 1.0"
-        $"\n*ReloadSpeed: 5% faster"
-        $"\n*RPM: 606 -> 700"
-        $"\n*SpareAmmo: 160 -> 280"
-        $"\n*VerticalRecoil: 165-200 -> 165-165"
-        $"\n*HorizontalRecoil: -165~190 -> -125~145";
+	return "*Damage: 70 -> 60"
+		$ "\n*Scope: 4x -> 2x"
+		$ "\n*Fire rate: 606 -> 700 RPM"
+		$ "\n*Spare ammo: 160 -> 280"
+		$ "\n*Recoil is steadier";
 }
 
 DefaultProperties

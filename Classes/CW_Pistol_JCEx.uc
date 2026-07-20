@@ -113,7 +113,7 @@ defaultproperties
 	WeaponProjectiles(0)=class'KFGameContent.KFProj_Bullet_Pistol50AE'
 	FireInterval(0)=0.2000000
 	Spread(0)=0.0100000
-	InstantHitDamage(0)=400.0000000 //200
+	InstantHitDamage(0)=113.0000000 //400
 	InstantHitDamageTypes(0)=class'CWP.Custom_KFDT_Ballistic_JCEx'
 	WeaponFireTypes(DEFAULT_FIREMODE)=EWFT_Projectile
 

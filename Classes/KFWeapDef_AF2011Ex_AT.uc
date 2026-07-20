@@ -3,12 +3,12 @@ class KFWeapDef_AF2011Ex_AT extends KFWeaponDefinition abstract;
 static function string GetItemDescription()
 {
 	return class'CWP.KFWeapDef_AF2011Ex'.static.GetItemDescription()
-		$ "\n*Add:Switch full-auto fire mode";
+		$ "\n*Right-click toggles full-auto mode";
 }
 
 DefaultProperties
 {
-	WeaponClassPath="CWP.KFWeap_Pistol_AF2011Ex_AT"
+	WeaponClassPath="CWP.CW_Pistol_AF2011Ex_AT"
 	ImagePath="WEP_UI_AF2001_TEX.UI_WeaponSelect_AF2011"
 
 	BuyPrice=750

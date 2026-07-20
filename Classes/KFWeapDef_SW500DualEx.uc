@@ -3,8 +3,9 @@ class KFWeapDef_SW500DualEx extends KFWeaponDefinition abstract;
 static function string GetItemDescription()
 {
 	return "*Damage: 160 -> 190"
-		$"\n*Stumble power: 60 -> 50"
-		$"\n*Reload speed 40% faster";
+		$ "\n*Stumble power: 60 -> 50"
+		$ "\n*Reload speed: 40% faster"
+		$ "\n*Vertical recoil: 750-850 -> 850-850";
 }
 
 DefaultProperties

@@ -2,11 +2,10 @@ class KFWeapDef_HRGCrossbowEx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*40HP heal per dart (50 ammo per dart)" $
-	"\n*12 Seconds full dart recharge" $
-	"\n*Dart dmg: 50" $
-	"\n*Dart projectile speed: Instant" $
-	"\n*No dart auto-track";
+	return "*Medic crossbow with 40 HP heal darts"
+		$ "\n*Ammo: 34 -> 14"
+		$ "\n*Weight: 7 -> 6"
+		$ "\n*No dart auto-track";
 }
 
 DefaultProperties

@@ -1,8 +1,8 @@
 //=============================================================================
 // KFWeapDef_AF2011Ex
 //=============================================================================
-// นิยามอาวุธ (Weapon Definition) สำหรับร้านค้า — AF2011Ex เดี่ยว
-// กำหนดชื่อ, รายละเอียด, ราคา, ภาพ และคลาสอาวุธที่จะ spawn
+// ?????????? (Weapon Definition) ????????????? ? AF2011Ex ??????
+// ?????????, ??????????, ????, ??? ????????????????? spawn
 //=============================================================================
 
 class KFWeapDef_AF2011Ex extends KFWeaponDefinition
@@ -10,11 +10,13 @@ class KFWeapDef_AF2011Ex extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "Knockdown Power: 15 -> 0\n Vertical Recoil: 550 - 650 -> 650 - 650 (Min - Max) \n Horizontal Recoil: -550 to 500 -> -225 to 225 (Left - Right)";
+	return "*Control power removed: knockdown/stumble/gun hit set lower"
+		$ "\n*Vertical recoil: 550-650 -> 650-650"
+		$ "\n*Horizontal recoil: -550~550 -> -225~225";
 }
 DefaultProperties
 {
-    WeaponClassPath="CWP.KFWeap_Pistol_AF2011Ex"
+    WeaponClassPath="CWP.CW_Pistol_AF2011Ex"
 
     BuyPrice=750
     AmmoPricePerMag=27

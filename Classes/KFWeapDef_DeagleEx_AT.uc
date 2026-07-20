@@ -2,8 +2,8 @@ class KFWeapDef_DeagleEx_AT extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return Localize("KFWeap_Pistol_Deagle", "ItemDescription", "KFGameContent")
-		$ "\n*Add:Switch full-auto fire mode";
+	return class'CWP.KFWeapDef_DeagleEx'.static.GetItemDescription()
+		$ "\n*Right-click toggles full-auto mode";
 }
 
 DefaultProperties
@@ -16,7 +16,7 @@ DefaultProperties
 
 	EffectiveRange=50
 
-	UpgradePrice[0]=700
+	//UpgradePrice[0]=700
 
-	UpgradeSellPrice[0]=525
+	//UpgradeSellPrice[0]=525
 }

@@ -1,5 +1,10 @@
 class KFWeapDef_P90Ex extends KFWeaponDefinition abstract;
 
+static function string GetItemDescription()
+{
+	return Localize("KFWeap_SMG_P90", "ItemDescription", "KFGameContent");
+}
+
 DefaultProperties
 {
 	WeaponClassPath="CWP.CW_SMG_P90Ex"

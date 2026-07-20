@@ -10,7 +10,7 @@ class KFWeapDef_MG3Ex extends KFWeaponDefinition abstract;
 static function string GetItemDescription()
 {
 	return "*Damage: 35 -> 50"
-		$"\n*ReloadSpeed: 20% faster";
+		$ "\n*Reload speed: 20% faster";
 }
 
 DefaultProperties

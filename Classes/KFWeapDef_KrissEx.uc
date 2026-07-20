@@ -1,5 +1,10 @@
 class KFWeapDef_KrissEx extends KFWeaponDefinition abstract;
 
+static function string GetItemDescription()
+{
+	return Localize("KFWeap_SMG_Kriss", "ItemDescription", "KFGameContent");
+}
+
 DefaultProperties
 {
 	WeaponClassPath="CWP.CW_SMG_KrissEx"

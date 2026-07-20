@@ -17,11 +17,9 @@ static function string GetItemCategory()
 
 static function string GetItemDescription()
 {
-    return "*Damage: 80 -> 121"
-//        $"\n*Damage: 70 -> 75"
-//        $"\n*HorizontalRecoil: -165~190 -> 0~140 (pulls right only)"
-//        $"\n*VerticalRecoil: 165-200 -> 230-230"
-        $"\n*ReloadSpeed: 35% faster";
+	return "*Damage: 80 -> 121"
+		$ "\n*Vertical recoil: 200-225 -> 225-225"
+		$ "\n*Sharpshooter reload: 35% faster";
 }
 
 DefaultProperties

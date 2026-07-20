@@ -3,8 +3,8 @@ class KFWeapDef_M14EBR_IS_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 80 -> 90" $
-	"\n*ADS Vertical recoil increased by 95 (30%)";
+	return "*Damage: 80 -> 90"
+		$ "\n*ADS vertical recoil: 225 -> 320";
 }
 
 

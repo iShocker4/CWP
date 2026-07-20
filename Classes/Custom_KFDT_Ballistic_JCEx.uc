@@ -29,8 +29,8 @@ defaultproperties
 {
 	WeaponDef=Class'CWP.KFWeapDef_JCEx'
 	ModifierPerkList(0)=class'KFPerk_Gunslinger'
-	KnockdownPower=300.0000000
-	StumblePower=300.0000000
+	KnockdownPower=0.0000000
+	StumblePower=0.0000000
 	GunHitPower=150.0000000
 	KDamageImpulse=2500.0000000
 	KDeathVel=250.0000000

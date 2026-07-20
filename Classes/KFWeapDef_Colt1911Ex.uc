@@ -2,7 +2,7 @@ class KFWeapDef_Colt1911Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return Localize("KFWeap_Pistol_Colt1911", "ItemDescription", "KFGameContent");
+	return "*Vertical recoil: 400-450 -> 450-450";
 }
 
 DefaultProperties

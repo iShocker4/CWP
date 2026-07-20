@@ -10,11 +10,10 @@ class KFWeapDef_CenterfireMB464Meme extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*More Damage: 165 -> 220"
-		$"\n*=== Sharpshooter Perk ==="
-		$"\n*Reload speed: 50% Faster"
-		$"\n*=== Gunslinger Perk ==="
-		$"\n*Reload speed: 60% Faster";
+	return "*Damage: 165 -> 220"
+		$ "\n*Sharpshooter reload: 50% faster"
+		$ "\n*Gunslinger reload: 60% faster"
+		$ "\n*Draw and put-away are faster";
 }
 
 DefaultProperties

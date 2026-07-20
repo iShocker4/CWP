@@ -2,10 +2,8 @@ class KFWeapDef_Bullpup_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage 25 -> 33" $
-	"\n*Recoil:" $
-	"\n*Pitch: Lower" $
-	"\n*Yaw: Slightly lower";
+	return "*Damage: 32 -> 33"
+		$ "\n*Recoil is slightly steadier";
 }
 
 DefaultProperties

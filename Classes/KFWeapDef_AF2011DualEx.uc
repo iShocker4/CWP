@@ -1,8 +1,8 @@
 //=============================================================================
 // KFWeapDef_AF2011DualEx
 //=============================================================================
-// นิยามอาวุธ (Weapon Definition) สำหรับร้านค้า — AF2011Ex คู่
-// กำหนดชื่อ, รายละเอียด, ราคา, ภาพ และคลาสอาวุธที่จะ spawn
+// ?????????? (Weapon Definition) ????????????? ? AF2011Ex ???
+// ?????????, ??????????, ????, ??? ????????????????? spawn
 //=============================================================================
 
 class KFWeapDef_AF2011DualEx extends KFWeaponDefinition
@@ -10,15 +10,14 @@ class KFWeapDef_AF2011DualEx extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Knockdown Power: 15 -> 0"
-//        $"\n*Reload Speed 5% faster"
-        $"\n*Vertical Recoil: 550 - 650 -> 650 - 650 (Min - Max)"
-        $"\n*Horizontal Recoil: -550 to 500 -> -225 to 225 (Left - Right)";
+	return "*Control power removed: knockdown/stumble/gun hit set lower"
+		$ "\n*Vertical recoil: 550-650 -> 650-650"
+		$ "\n*Horizontal recoil: -550~550 -> -225~225";
 }
 
 DefaultProperties
 {
-    WeaponClassPath="CWP.KFWeap_Pistol_DualAF2011Ex"
+    WeaponClassPath="CWP.CW_Pistol_DualAF2011Ex"
 
     BuyPrice=1500
     AmmoPricePerMag=54

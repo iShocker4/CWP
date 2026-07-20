@@ -1,5 +1,10 @@
 class KFWeapDef_HZ12Ex extends KFWeaponDefinition abstract;
 
+static function string GetItemDescription()
+{
+	return Localize("KFWeap_Shotgun_HZ12", "ItemDescription", "KFGameContent");
+}
+
 DefaultProperties
 {
 	WeaponClassPath="CWP.CW_Shotgun_HZ12Ex"

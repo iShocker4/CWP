@@ -10,8 +10,8 @@ class KFWeapDef_DeagleDualEx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*RPM: 545 -> 530"; 
-//		$"\n*Reload Speed 5% faster";
+	return "*Fire rate: 545 -> 531 RPM"
+		$ "\n*Vertical recoil: 550-650 -> 650-650";
 }
 
 DefaultProperties
@@ -24,9 +24,9 @@ DefaultProperties
 
 	EffectiveRange=50
 
-	UpgradePrice[0]=700
+	//UpgradePrice[0]=700
 //	UpgradePrice[1]=1500
 
-	UpgradeSellPrice[0]=525
+	//UpgradeSellPrice[0]=525
 //	UpgradeSellPrice[1]=1650
 }

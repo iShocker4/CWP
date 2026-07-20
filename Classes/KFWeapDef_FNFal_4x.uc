@@ -11,11 +11,10 @@ class KFWeapDef_FNFal_4x extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-    return "*FireRate: 606 -> 496rpm"
-        $"\n*Damage: 70 -> 75"
-        $"\n*HorizontalRecoil: -165~190 -> 0~140 (pulls right only)"
-        $"\n*VerticalRecoil: 165-200 -> 230-230"
-        $"\n*ReloadSpeed: 5% faster";
+	return "*Damage: 70 -> 75"
+		$ "\n*Fire rate: 606 -> 496 RPM"
+		$ "\n*Recoil is heavier and pulls right"
+		$ "\n*Reload speed: 5% faster";
 }
 
 DefaultProperties
