@@ -2,7 +2,7 @@ class KFWeapDef_Colt1911Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Vertical recoil: 400-450 -> 450-450";
+	return "*Recoil: slightly stronger vertical kick";
 }
 
 DefaultProperties

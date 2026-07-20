@@ -12,7 +12,7 @@ class KFWeapDef_Pistol_G18CEx extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return Localize("KFWeap_Pistol_G18C", "ItemDescription", "KFGameContent");
+	return "*Recoil: heavy automatic kick";
 }
 
 DefaultProperties

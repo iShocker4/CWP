@@ -40,12 +40,12 @@ defaultproperties
     DOF_FG_MaxNearBlurSize=3.5000000
 
     // Recoil
-    maxRecoilPitch=225
-    minRecoilPitch=200
-    maxRecoilYaw=200
-    minRecoilYaw=-200
-    RecoilRate=0.0800000
-    RecoilViewRotationScale=0.6000000
+    maxRecoilPitch=1100
+    minRecoilPitch=850
+    maxRecoilYaw=700
+    minRecoilYaw=-500
+    RecoilRate=0.0850000
+    RecoilViewRotationScale=0.8000000
     RecoilMaxYawLimit=500
     RecoilMinYawLimit=65035
     RecoilMaxPitchLimit=900

@@ -2,7 +2,7 @@ class KFWeapDef_MedicRifle_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Vertical recoil: 105-140 -> 140-140";
+	return "*Recoil: slightly stronger vertical kick";
 }
 
 DefaultProperties

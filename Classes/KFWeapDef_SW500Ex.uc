@@ -4,7 +4,7 @@ static function string GetItemDescription()
 {
 	return "*Damage: 160 -> 190"
 		$ "\n*Stumble power: 60 -> 50"
-		$ "\n*Vertical recoil: 750-850 -> 850-850";
+		$ "\n*Recoil: stronger vertical kick";
 }
 
 DefaultProperties

@@ -1,9 +1,9 @@
 //=============================================================================
 // KFWeapDef_CenterfireMB464Ex
 //=============================================================================
-// นิยามอาวุธ (Weapon Definition) สำหรับร้านค้า — Centerfire MB464 Custom
-// กำหนดชื่อ, รายละเอียด, ราคา, ภาพ และคลาสอาวุธที่จะ spawn
-// ดึง localization บางส่วนจาก Centerfire MB464 ต้นฉบับ
+// ?????????? (Weapon Definition) ????????????? ? Centerfire MB464 Custom
+// ?????????, ??????????, ????, ??? ????????????????? spawn
+// ??? localization ?????????? Centerfire MB464 ???????
 //=============================================================================
 
 class KFWeapDef_CenterfireMB464Ex extends KFWeaponDefinition abstract;
@@ -12,6 +12,7 @@ static function string GetItemDescription()
 {
 	return "*Damage: 165 -> 180"
 		$ "\n*Sharpshooter/Gunslinger reload: 20% faster"
+		$ "\n*Recoil: slightly stronger vertical kick"
 		$ "\n*Draw and put-away are faster";
 }
 

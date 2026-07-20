@@ -132,15 +132,15 @@ defaultproperties
     DOF_FG_MaxNearBlurSize=2.5000000
 
     // Recoil
-    maxRecoilPitch=550
-    minRecoilPitch=400
-    maxRecoilYaw=150
-    minRecoilYaw=-150
-    RecoilRate=0.0800000
-    RecoilViewRotationScale=0.6000000
+    maxRecoilPitch=850
+    minRecoilPitch=700
+    maxRecoilYaw=260
+    minRecoilYaw=-260
+    RecoilRate=0.0900000
+    RecoilViewRotationScale=0.7000000
     RecoilMaxYawLimit=500
     RecoilMinYawLimit=65035
-    RecoilMaxPitchLimit=1250
+    RecoilMaxPitchLimit=1450
     RecoilMinPitchLimit=64785
     RecoilISMaxYawLimit=50
     RecoilISMinYawLimit=65485
@@ -169,7 +169,7 @@ defaultproperties
     WeaponProjectiles(0)=class'KFGameContent.KFProj_Bullet_MosinNagant'
     FireInterval(0)=0.8500000
     Spread(0)=0.0070000
-    InstantHitDamage(0)=300.0000000
+    InstantHitDamage(0)=450.0000000
     InstantHitDamageTypes(0)=class'CWP.KFDT_Ballistic_M24'
     WeaponFireTypes(DEFAULT_FIREMODE)=EWFT_InstantHit
 
@@ -191,7 +191,7 @@ defaultproperties
     // Components
     begin object name="SceneCapture2DComponent0"
         TextureTarget=TextureRenderTarget2D'Wep_Mat_Lib.WEP_ScopeLense_Target'
-        FieldOfView=6.2500000
+        FieldOfView=12.5000000
     end object
     begin object name="FirstPersonMesh"
         ReplacementPrimitive=none

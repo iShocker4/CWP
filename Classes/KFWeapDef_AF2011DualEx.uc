@@ -11,8 +11,8 @@ class KFWeapDef_AF2011DualEx extends KFWeaponDefinition
 static function string GetItemDescription()
 {
 	return "*Control power removed: knockdown/stumble/gun hit set lower"
-		$ "\n*Vertical recoil: 550-650 -> 650-650"
-		$ "\n*Horizontal recoil: -550~550 -> -225~225";
+		$ "\n*Recoil: stronger vertical kick"
+		$ "\n*Recoil: steadier side pull";
 }
 
 DefaultProperties

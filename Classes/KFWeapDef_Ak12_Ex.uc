@@ -4,7 +4,7 @@ static function string GetItemDescription()
 {
 	return "*Damage: 40 -> 46"
 		$ "\n*Weight: 6 -> 7"
-		$ "\n*Burst fire recoil is steadier";
+		$ "\n*Recoil: steadier burst control";
 }
 
 DefaultProperties

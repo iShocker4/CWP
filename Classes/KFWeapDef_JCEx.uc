@@ -1,8 +1,8 @@
 //=============================================================================
 // KFWeapDef_JCEx
 //=============================================================================
-// นิยามอาวุธ (Weapon Definition) สำหรับร้านค้า — JC (Casull) เดี่ยว
-// นำเข้าจาก AGST mod
+// ?????????? (Weapon Definition) ????????????? ? JC (Casull) ??????
+// ????????? AGST mod
 //=============================================================================
 
 class KFWeapDef_JCEx extends KFWeaponDefinition
@@ -12,6 +12,7 @@ static function string GetItemDescription()
 {
 	return "*Damage: 113"
 		$ "\n*Fire rate: 300 RPM"
+		$ "\n*Recoil: moderate and controlled for its power"
 		$ "\n*Weight: 5"
 		$ "\n*Heavy bash damage: 300";
 }

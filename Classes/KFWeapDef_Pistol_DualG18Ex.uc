@@ -12,7 +12,7 @@ class KFWeapDef_Pistol_DualG18Ex extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return Localize("KFWeap_Pistol_DualG18", "ItemDescription", "KFGameContent");
+	return "*Recoil: heavy dual automatic kick";
 }
 
 DefaultProperties

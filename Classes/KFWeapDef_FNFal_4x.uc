@@ -1,9 +1,9 @@
 //=============================================================================
 // KFWeapDef_FNFal_4x
 //=============================================================================
-// นิยามอาวุธ (Weapon Definition) สำหรับร้านค้า — FN FAL 4x ACOG
-// กำหนดชื่อ, รายละเอียด, ราคา, ภาพ และคลาสอาวุธที่จะ spawn
-// ดึง localization บางส่วนจาก FNFal ต้นฉบับ
+// ?????????? (Weapon Definition) ????????????? ? FN FAL 4x ACOG
+// ?????????, ??????????, ????, ??? ????????????????? spawn
+// ??? localization ?????????? FNFal ???????
 //=============================================================================
 
 class KFWeapDef_FNFal_4x extends KFWeaponDefinition
@@ -13,7 +13,7 @@ static function string GetItemDescription()
 {
 	return "*Damage: 70 -> 75"
 		$ "\n*Fire rate: 606 -> 496 RPM"
-		$ "\n*Recoil is heavier and pulls right"
+		$ "\n*Recoil: heavier and pulls right"
 		$ "\n*Reload speed: 5% faster";
 }
 

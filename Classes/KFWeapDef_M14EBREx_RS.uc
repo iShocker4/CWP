@@ -1,9 +1,9 @@
 //=============================================================================
 // KFWeapDef_M14EBREx_RS
 //=============================================================================
-// นิยามอาวุธ (Weapon Definition) สำหรับร้านค้า — M14 EBR Custom (ACOG)
-// กำหนดชื่อ, รายละเอียด, ราคา, ภาพ และคลาสอาวุธที่จะ spawn
-// ดึง localization บางส่วนจาก M14 EBR ต้นฉบับ
+// ?????????? (Weapon Definition) ????????????? ? M14 EBR Custom (ACOG)
+// ?????????, ??????????, ????, ??? ????????????????? spawn
+// ??? localization ?????????? M14 EBR ???????
 //=============================================================================
 
 class KFWeapDef_M14EBREx_RS extends KFWeaponDefinition abstract;
@@ -18,7 +18,7 @@ static function string GetItemCategory()
 static function string GetItemDescription()
 {
 	return "*Damage: 80 -> 121"
-		$ "\n*Vertical recoil: 200-225 -> 225-225"
+		$ "\n*Recoil: slightly stronger vertical kick"
 		$ "\n*Sharpshooter reload: 35% faster";
 }
 

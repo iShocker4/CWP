@@ -3,7 +3,7 @@ class KFWeapDef_SCAREx extends KFWeaponDefinition abstract;
 static function string GetItemDescription()
 {
 	return "*Alt-fire rate: 600 -> 625 RPM"
-		$ "\n*Vertical recoil: 125-150 -> 150-150";
+		$ "\n*Recoil: slightly stronger vertical kick";
 }
 
 DefaultProperties

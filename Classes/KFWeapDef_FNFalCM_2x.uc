@@ -1,9 +1,9 @@
 //=============================================================================
 // KFWeapDef_FNFalCM_2x
 //=============================================================================
-// นิยามอาวุธ (Weapon Definition) สำหรับร้านค้า — FN FAL 2x Scope
-// กำหนดชื่อ, รายละเอียด, ราคา, ภาพ และคลาสอาวุธที่จะ spawn
-// ดึง localization บางส่วนจาก FNFal ต้นฉบับ
+// ?????????? (Weapon Definition) ????????????? ? FN FAL 2x Scope
+// ?????????, ??????????, ????, ??? ????????????????? spawn
+// ??? localization ?????????? FNFal ???????
 //=============================================================================
 
 class KFWeapDef_FNFalCM_2x extends KFWeaponDefinition
@@ -15,7 +15,7 @@ static function string GetItemDescription()
 		$ "\n*Scope: 4x -> 2x"
 		$ "\n*Fire rate: 606 -> 700 RPM"
 		$ "\n*Spare ammo: 160 -> 280"
-		$ "\n*Recoil is steadier";
+		$ "\n*Recoil: steadier";
 }
 
 DefaultProperties

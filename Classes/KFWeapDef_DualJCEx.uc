@@ -1,8 +1,8 @@
 //=============================================================================
 // KFWeapDef_DualJCEx
 //=============================================================================
-// นิยามอาวุธ (Weapon Definition) สำหรับร้านค้า — JC (Jackal & Casull) คู่
-// นำเข้าจาก AGST mod
+// ?????????? (Weapon Definition) ????????????? ? JC (Jackal & Casull) ???
+// ????????? AGST mod
 //=============================================================================
 
 class KFWeapDef_DualJCEx extends KFWeaponDefinition
@@ -12,6 +12,7 @@ static function string GetItemDescription()
 {
 	return "*Damage: 113 per bullet"
 		$ "\n*Dual fire rate: 545 RPM"
+		$ "\n*Recoil: moderate dual-pistol kick"
 		$ "\n*Weight: 10"
 		$ "\n*Heavy bash damage: 300";
 }

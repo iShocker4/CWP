@@ -9,7 +9,7 @@ static function string GetItemDescription()
 {
 	return "*Damage: 70 -> 91"
 		$ "\n*Fire rate: 606 -> 496 RPM"
-		$ "\n*Horizontal recoil removed"
+		$ "\n*Recoil: no side pull"
 		$ "\n*Reload speed: 25% faster"
 		$ "\n*Weight: 8 -> 9";
 }
