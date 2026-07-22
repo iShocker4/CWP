@@ -16,6 +16,6 @@ simulated function float GetReloadRateScale()
 
 DefaultProperties
 {
-	// Damage
+	// DEFAULT_FIREMODE
 	InstantHitDamage(DEFAULT_FIREMODE)=300.0 //250
 }

@@ -103,16 +103,18 @@ simulated function ProcessInstantHitEx(byte FiringMode, ImpactInfo Impact, optio
 
 defaultproperties
 {
-    // ???????????? Single Ex
+    // Single class
     SingleClass=class'CW_Pistol_AF2011Ex'
 
+    // DEFAULT_FIREMODE
     WeaponFireTypes(DEFAULT_FIREMODE)=EWFT_InstantHit
-    WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_InstantHit
-
-    // DamageType ???????????????
     InstantHitDamageTypes(DEFAULT_FIREMODE)=class'KFDT_Ballistic_AF2011Ex'
+
+    // ALTFIRE_FIREMODE
+    WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_InstantHit
     InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'KFDT_Ballistic_AF2011Ex'
 
+    // Inventory / Grouping
     GroupPriority=50
 
 	// Recoil

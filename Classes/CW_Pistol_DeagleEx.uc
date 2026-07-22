@@ -28,8 +28,10 @@ DefaultProperties
 	maxRecoilPitch=650
 	minRecoilPitch=650
 
-	// Other
+	// Dual class
 	DualClass=class'CWP.CW_Pistol_DualDeagleEx'
+
+	// Upgrades
 	WeaponUpgrades.Empty
 //	WeaponUpgrades[2]=(Stats=((Stat=EWUS_Damage0, Scale=1.4f), (Stat=EWUS_Weight, Add=2)))
 }

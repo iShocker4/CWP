@@ -35,12 +35,21 @@ function bool DenyPickupQuery(class<Inventory> ItemClass, Actor Pickup)
 
 DefaultProperties
 {
+	// Inventory / Grouping
 	// DroppedPickupClass=class'CW_DroppedPickup_Ex'
+
+	// Medic / Lock-on
 	SecondaryAmmoTextureDisableLockOn=Texture2D'Custom_UI_SecondaryAmmo_TEX.MedicDarts'
-	InitialSpareMags[0]=0
 	LockChecktime=0.025
 	LockAcquireTime=0.05
+
+	// Ammo
+	InitialSpareMags[0]=0
+
+	// Recoil
 	maxRecoilPitch=75
 	minRecoilPitch=75
+
+	// Upgrades
 	WeaponUpgrades.Empty
 }

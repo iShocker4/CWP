@@ -48,17 +48,20 @@ SimuLated function float GetReloadRateScale()
 
 DefaultProperties
 {
-	// Inventory
+	// Inventory / Grouping
 	InventorySize=9
 
+	// Perk / Reload
 	ReloadSpeedMod=1.0
 	EmptyReloadRateScale=0.9175258
+
+	// Content
 	PackageKey="FNFAL_4x_MEME"
 
 	// Recoil
 	maxRecoilYaw=0
 	minRecoilYaw=0
 
-	// Damage
+	// DEFAULT_FIREMODE
 	InstantHitDamage(DEFAULT_FIREMODE)=91.0
 }

@@ -153,9 +153,9 @@ DefaultProperties
 	maxRecoilPitch=500 // 500
 	minRecoilPitch=500 // 400
 
-	// Damage
+	// DEFAULT_FIREMODE
 	InstantHitDamage(DEFAULT_FIREMODE)=220
 
-	// CW pickup class override
+	// Upgrades
 	WeaponUpgrades.Empty
 }

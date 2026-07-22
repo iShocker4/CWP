@@ -125,6 +125,9 @@ simulated function SetLowAmmoMaterial()
 
 defaultproperties
 {
+	// Pickup behavior
 	bUseLowHealthDelay=false
+
+	// Content
 	LowAmmoPickupColor=(R=1.0000000,G=0.9700000,B=0.3600000,A=1.0000000)
 }

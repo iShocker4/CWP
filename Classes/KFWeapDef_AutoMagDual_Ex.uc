@@ -6,7 +6,7 @@ static function string GetItemDescription()
 	return "*Damage: 140 per bullet at 462 RPM, penetration 4"
 		$ "\n*Control power: no knockdown/stumble, gun hit 150"
 		$ "\n*Recoil: stronger than Dual Deagle, below Dual SW500"
-		$ "\n*Weight: 4, 18-round mag";
+		$ "\n*Weight: 8, 18-round mag";
 }
 
 defaultproperties

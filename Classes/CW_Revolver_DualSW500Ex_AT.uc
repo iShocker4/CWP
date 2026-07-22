@@ -35,8 +35,10 @@ simulated state WeaponFiring
 
 DefaultProperties
 {
+	// ALTFIRE_FIREMODE
 	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'
 	FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
 
+	// Single class
 	SingleClass=class'CWP.CW_Revolver_SW500Ex_AT'
 }

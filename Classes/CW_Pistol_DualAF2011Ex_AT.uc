@@ -35,6 +35,7 @@ simulated state WeaponFiring
 
 DefaultProperties
 {
+	// ALTFIRE_FIREMODE
 	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'
 	FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
 	WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_InstantHit
@@ -46,5 +47,6 @@ DefaultProperties
 	Spread(ALTFIRE_FIREMODE)=0.01
 	AmmoCost(ALTFIRE_FIREMODE)=2
 
+	// Single class
 	SingleClass=class'CWP.CW_Pistol_AF2011Ex_AT'
 }

@@ -83,8 +83,11 @@ DefaultProperties
 	FireInterval(ALTFIRE_FIREMODE)=+0.175
 	InstantHitDamage(ALTFIRE_FIREMODE)=50.0
 	Spread(ALTFIRE_FIREMODE)=0.015
+
+	// Fire Effects
 	WeaponFireSnd(ALTFIRE_FIREMODE)=(DefaultCue=AkEvent'WW_WEP_1911.Play_WEP_SA_1911_Fire_Single_M', FirstPersonCue=AkEvent'WW_WEP_1911.Play_WEP_SA_1911_Fire_Single_S')
 	WeaponDryFireSnd(ALTFIRE_FIREMODE)=AkEvent'WW_WEP_1911.Play_WEP_SA_1911_Handling_DryFire'
 
+	// Dual class
 	DualClass=class'CWP.CW_Pistol_DualColt1911Ex_AT'
 }

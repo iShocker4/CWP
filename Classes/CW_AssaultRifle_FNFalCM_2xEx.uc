@@ -103,7 +103,7 @@ DefaultProperties
 	DOF_FG_FocalRadius=0
 	DOF_FG_MaxNearBlurSize=3.5
 
-	// Zooming/Position
+	// Zooming / Position
 	IronSightPosition=(X=12,Y=-0.04,Z=1.33)
 	PlayerViewOffset=(X=22.0,Y=11,Z=-3.0)
 
@@ -114,7 +114,7 @@ DefaultProperties
 	bCanBeReloaded=true
 	bReloadFromMagazine=true
 
-	// Inventory
+	// Inventory / Grouping
 	InventorySize=7
 	GroupPriority=100
 

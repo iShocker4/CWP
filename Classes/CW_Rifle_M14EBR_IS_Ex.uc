@@ -51,10 +51,10 @@ DefaultProperties
 	PickupMeshName="CustomM14PackageEx.TPP_Model.Wep_M14EBR_Pickup"
 	AttachmentArchetypeName="CustomM14PackageEx.TPP_Model.Wep_M14EBR_3P"
 	
-	// Zooming/Position
+	// Zooming / Position
 	PlayerViewOffset=(X=15.0,Y=11.5,Z=-2)
 	IronSightPosition=(X=5.0,Y=0,Z=3.75)
 
-	// Other
+	// Scope
 	ScopedSensitivityMod=15.00 //12.500000
 }

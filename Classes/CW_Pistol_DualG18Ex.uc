@@ -101,8 +101,6 @@ simulated event vector GetMuzzleLoc()
 
 defaultproperties
 {
-	SingleClass=class'CW_Pistol_G18CEx'
-
     // FOV
 	MeshFOV=96
 	MeshIronSightFOV=77
@@ -216,9 +214,11 @@ defaultproperties
 
 
 
+	// Perk / Class
 	AssociatedPerkClasses(0)=class'KFPerk_Gunslinger' //Main Perk
+	SingleClass=class'CW_Pistol_G18CEx'
 
-	// Inventory 
+	// Inventory / Grouping
 	InventorySize=8 //Weight Ammount
 	GroupPriority=100
 	bCanThrow=true

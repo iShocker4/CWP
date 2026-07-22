@@ -32,13 +32,13 @@ simulated function bool HasAnyAmmo()
 
 DefaultProperties
 {
-	// Inventory
+	// Inventory / Grouping
 	InventorySize=6 //7
 	GroupPriority=50
 	WeaponSelectTexture=Texture2D'WEP_UI_Crossbow_TEX.UI_WeaponSelect_Crossbow'
 	SecondaryAmmoTexture=Texture2D'UI_SecondaryAmmo_TEX.MedicDarts'
 	
-	//Perk
+	// Perk / Class
 	AssociatedPerkClasses.Empty
 	AssociatedPerkClasses(0)=class'KFPerk_FieldMedic'
 	
@@ -78,6 +78,7 @@ DefaultProperties
 	AttachmentArchetypeName="WEP_Crossbow_ARCH.Wep_Crossbow_3P"
 	MuzzleFlashTemplateName="WEP_Crossbow_ARCH.Wep_Crossbow_MuzzleFlash"
 	
+	// Ammo
 	MagazineCapacity[0]=1
 	SpareAmmoCapacity[0]=14 //39
 	InitialSpareMags[0]=0 // 14
@@ -137,7 +138,7 @@ DefaultProperties
 	TargetingCompClass=class'KFTargetingWeaponComponent_HRGIncision'
 	MedicCompClass=class'Custom_KFMedicWeaponComponent_HRGIncisionEx'
 	
-	Custom animations
+	// Custom animations
 	FireSightedAnims=(Shoot_Iron, Shoot_Iron2, Shoot_Iron3)
 	BonesToLockOnEmpty=(RW_Cable_Parent)
 	

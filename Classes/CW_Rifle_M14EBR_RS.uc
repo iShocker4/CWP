@@ -244,10 +244,10 @@ function SetOriginalValuesFromPickup(KFWeapon PickedUpWeapon)
 
 DefaultProperties
 {
-	// Lens override
+	// Content
 	ScopeLenseMICTemplate=MaterialInstanceConstant'CustomScope_Ex.WEP_1P_M14EBR_Scope_MAT'
 
-	// Offsets/Positioning
+	// Zooming / Position
 	PlayerViewOffset=(X=15.0,Y=11.5,Z=-4)
 	IronSightPosition=(X=6.0,Y=-0.025,Z=-0.03)
 
@@ -256,7 +256,7 @@ DefaultProperties
 	bCanBeReloaded=true
 	bReloadFromMagazine=true
 
-	// Inventory handling
+	// Inventory / Grouping
 	EquipTime=0.20
 	PutDownTime=0.20
 
@@ -264,10 +264,12 @@ DefaultProperties
 	maxRecoilPitch=225
 	minRecoilPitch=225 // 200
 
-	// Damage
+	// DEFAULT_FIREMODE
 	InstantHitDamage(DEFAULT_FIREMODE)=121.0 //80
 
-	// Other
+	// Laser sight
 	bIsLaserSightEnabled=true
+
+	// Upgrades
 	WeaponUpgrades.Empty
 }

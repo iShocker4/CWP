@@ -68,11 +68,11 @@ DefaultProperties
 	PackageKey="FNFAL_4x_EX"
 	ScopeLenseMICTemplate=MaterialInstanceConstant'CustomScope_Ex.WEP_1P_FNFAL_Scope_MAT'
 
-	// Zooming/Position
+	// Zooming / Position
 	PlayerViewOffset=(X=22.0,Y=11,Z=-3.0)
 	IronSightPosition=(X=15,Y=0,Z=-0.01)
 
-	// Inventory
+	// Inventory / Grouping
 	InventorySize=8
 
 	// Recoil
@@ -90,7 +90,7 @@ DefaultProperties
 	FireInterval(ALTFIRE_FIREMODE)=+0.121
 	InstantHitDamage(ALTFIRE_FIREMODE)=75.0
 
-	// Perk
+	// Perk / Class
 	AssociatedPerkClasses.Empty
     AssociatedPerkClasses(0)=class'KFPerk_Sharpshooter'
 }

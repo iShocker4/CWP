@@ -41,5 +41,6 @@ DefaultProperties
 	FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
 	FireInterval(ALTFIRE_FIREMODE)=+0.14
 
+	// Single class
 	SingleClass=class'CWP.CW_Pistol_DeagleEx_AT'
 }

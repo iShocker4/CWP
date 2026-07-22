@@ -4,6 +4,20 @@ class CW_Rifle_M24_Ex extends KFWeap_ScopedBase
 
 var float LastFireInterval;
 
+simulated event PostBeginPlay()
+{
+    super.PostBeginPlay();
+    // Runtime balance tuning disabled while adjusting FOV and mesh position.
+    // class'CWP_BalanceTuning'.static.ApplyM24(self);
+}
+
+/*
+simulated function float GetUpgradedAfflictionPower(EAfflictionType AfflictionType, float InPower, optional int FireMode = INDEX_NONE, optional int UpgradeIndex = INDEX_NONE)
+{
+    return class'CWP_BalanceTuning'.static.GetM24AfflictionPower(AfflictionType, super.GetUpgradedAfflictionPower(AfflictionType, InPower, FireMode, UpgradeIndex));
+}
+*/
+
 static simulated event KFGFxObject_TraderItems.EFilterTypeUI GetTraderFilter()
 {
     return 2;
@@ -53,11 +67,15 @@ simulated function StartFire(byte FireModeNum)
 simulated function name GetReloadAnimName(bool bTacticalReload)
 {
     local name ReloadAnimName;
+    local int ReloadAnimAmmoCount;
 
     if (AmmoCount[0] > 0)
     {
+        // The M24 animation set only provides partial-reload variants through _4.
+        // Keep the six-round magazine, but use the closest available variant at 5.
+        ReloadAnimAmmoCount = Min(AmmoCount[0], 4);
         ReloadAnimName = (bTacticalReload ? 'Reload_Half_Elite' : 'Reload_Half');
-        ReloadAnimName = name((string(ReloadAnimName) $ string('_')) $ string(AmmoCount[0]));
+        ReloadAnimName = name((string(ReloadAnimName) $ string('_')) $ string(ReloadAnimAmmoCount));
         return ReloadAnimName;
     }
     else
@@ -73,6 +91,14 @@ simulated function float GetFireInterval(byte FireModeNum)
         return LastFireInterval;
     }
     return super(Weapon).GetFireInterval(FireModeNum);
+}
+
+// GetReloadRateScale — เพิ่มความเร็วรีโหลด 15% จากค่าเดิม
+// พารามิเตอร์: ไม่มี
+// คืนค่า: float - ตัวคูณความเร็วรีโหลด
+simulated function float GetReloadRateScale()
+{
+    return Super.GetReloadRateScale() * 0.85;
 }
 
 static simulated function float CalculateTraderWeaponStatDamage()
@@ -96,40 +122,52 @@ static simulated function float CalculateTraderWeaponStatFireRate()
 
 defaultproperties
 {
-    // Content assets
+    // Inventory / Grouping
+    InventorySize=7
+    GroupPriority=75.0000000
+    WeaponSelectTexture=Texture2D'WEP_M24_TEX.UI_M24'
+    AssociatedPerkClasses(0)=class'KFGame.KFPerk_Sharpshooter'
+
+
+    // 2D scene capture
+    begin object name="SceneCapture2DComponent0"
+        TextureTarget=TextureRenderTarget2D'Wep_Mat_Lib.WEP_ScopeLense_Target'
+        FieldOfView=12.5000000
+    end object
+
+
+    ScopedSensitivityMod=8.0000000
+    ScopeLenseMICTemplate=MaterialInstanceConstant'wep_1p_m24_mat.WEP_1P_M24_Scope_MAT'
+
+    // FOV
+    MeshFOV=65.0000000
+    MeshIronSightFOV=45.0000000
+    PlayerIronSightFOV=65.0000000
+    IronSightMeshFOVCompensationScale=1.5000000
+
+    // Depth of field
+    DOF_FG_MaxNearBlurSize=0.5000000
+
+    // Content
     PackageKey="M24"
     FirstPersonMeshName="WEP_1P_M24_MESH.WEP_1stP_M24_Rig"
     FirstPersonAnimSetNames(0)="wep_1p_mosin_anim.Wep_1stP_Mosin_ANIM"
     PickupMeshName="WEP_3P_M24_MESH.WEP_3rdP_M24_Pickup"
     AttachmentArchetypeName="WEP_M24_ARCH.Wep_Mosin_3P"
     MuzzleFlashTemplateName="WEP_Mosin_ARCH.Wep_Mosin_MuzzleFlash"
-    WeaponSelectTexture=Texture2D'WEP_M24_TEX.UI_M24'
-    WeaponFireWaveForm=ForceFeedbackWaveform'FX_ForceFeedback_ARCH.Gunfire.Medium_Recoil'
 
-    // Weapon behavior
-    bHasIronSights=true
-    bCanBeReloaded=true
-    bReloadFromMagazine=true
-    BonesToLockOnEmpty(0)=RW_Bolt_Back
-
-    // Inventory and trader sorting
-    InventorySize=7
-    GroupPriority=75.0000000
-
-    // Ammo economy
+    // Ammo
     MagazineCapacity=6
     SpareAmmoCapacity=114
     InitialSpareMags=5
 
-    // Sights and view offsets
-    MeshFOV=65.0000000
-    MeshIronSightFOV=45.0000000
-    PlayerIronSightFOV=65.0000000
-    IronSightPosition=(X=-3.0000000,Y=0.0000000,Z=-2.0000000)
-    PlayerViewOffset=(X=8.0000000,Y=7.0000000,Z=-3.5000000)
-    IronSightMeshFOVCompensationScale=1.5000000
-    FireOffset=(X=25.0000000,Y=3.0000000,Z=-2.5000000)
-    DOF_FG_MaxNearBlurSize=2.5000000
+    // Zooming / Position
+    PlayerViewOffset=(X=8.2500000,Y=13.0000000,Z=-3.5000000)
+    IronSightPosition=(X=-3.0000000,Y=-0.0825000,Z=-2.4250000)
+
+    // AI warning system
+    bWarnAIWhenAiming=true
+    AimWarningDelay=(X=0.4000000,Y=0.8000000)
 
     // Recoil
     maxRecoilPitch=850
@@ -147,52 +185,47 @@ defaultproperties
     RecoilISMaxPitchLimit=500
     RecoilISMinPitchLimit=65485
 
-/*
-    // Melee
-    Begin Object Name=MeleeHelper_0
-    end object
-    MeleeAttackHelper=MeleeHelper_0
-*/
+    // DEFAULT_FIREMODE (0)
+    FireModeIconPaths(DEFAULT_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletSingle'
+    FiringStatesArray(DEFAULT_FIREMODE)=WeaponSingleFiring
+    WeaponFireTypes(DEFAULT_FIREMODE)=EWFT_InstantHit
+    WeaponProjectiles(DEFAULT_FIREMODE)=class'KFGameContent.KFProj_Bullet_MosinNagant'
+    InstantHitDamage(DEFAULT_FIREMODE)=400.0000000 //450
+    InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_M24'
+    FireInterval(DEFAULT_FIREMODE)=0.8500000
+    PenetrationPower(DEFAULT_FIREMODE)=2.0000000
+    Spread(DEFAULT_FIREMODE)=0.0010000
+    FireOffset=(X=25.0000000,Y=3.0000000,Z=-2.5000000)
 
-    // Fire mode stats
+    // ALTFIRE_FIREMODE (1)
+    FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletSingle'
+    FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
+    WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_None
+    InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'KFGame.KFDT_Ballistic'
+    FireInterval(ALTFIRE_FIREMODE)=1.0000000
+
+    // BASH_FIREMODE (3)
+    InstantHitDamageTypes(BASH_FIREMODE)=class'KFGameContent.KFDT_Piercing_MosinNagant'
+    InstantHitDamage(BASH_FIREMODE)=1000.0000000
+
+    // Fire effects
+    WeaponFireSnd(0)=(DefaultCue=AkEvent'WW_WEP_MosinNagant.Play_MosinNagant_Shoot_3P',FirstPersonCue=AkEvent'WW_WEP_MosinNagant.Play_MosinNagant_Shoot_1P')
+    WeaponDryFireSnd(0)=AkEvent'WW_WEP_MosinNagant.Play_MosinNagant_DryFire'
+
+    // Custom animations
     FireSightedAnims(0)=Shoot_Iron
     FireSightedAnims(1)=Shoot_Iron2
     FireSightedAnims(2)=Shoot_Iron3
 
-    // DEFAULT_FIREMODE (0)
-    FireModeIconPaths(0)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletSingle'
-    PenetrationPower(0)=3.0000000
-    WeaponFireSnd(0)=(DefaultCue=AkEvent'WW_WEP_MosinNagant.Play_MosinNagant_Shoot_3P',FirstPersonCue=AkEvent'WW_WEP_MosinNagant.Play_MosinNagant_Shoot_1P')
-    WeaponDryFireSnd(0)=AkEvent'WW_WEP_MosinNagant.Play_MosinNagant_DryFire'
-    AssociatedPerkClasses(0)=class'KFGame.KFPerk_Sharpshooter'
-    FiringStatesArray(0)=WeaponSingleFiring
-    WeaponProjectiles(0)=class'KFGameContent.KFProj_Bullet_MosinNagant'
-    FireInterval(0)=0.8500000
-    Spread(0)=0.0070000
-    InstantHitDamage(0)=450.0000000
-    InstantHitDamageTypes(0)=class'CWP.KFDT_Ballistic_M24'
-    WeaponFireTypes(DEFAULT_FIREMODE)=EWFT_InstantHit
-
-    // ALTFIRE_FIREMODE (1)
-    FireModeIconPaths(1)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletSingle'
-    FiringStatesArray(1)=WeaponFiring
-    FireInterval(1)=1.0000000
-    InstantHitDamageTypes(1)=class'KFGame.KFDT_Ballistic'
-    WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_None
-
-    // BASH_FIREMODE (3)
-    InstantHitDamage(3)=100.0000000
-    InstantHitDamageTypes(3)=class'KFGameContent.KFDT_Piercing_MosinNagant'
-
-    // Upgrade path
-    WeaponUpgrades.Empty
+    // Attachments
+    bHasIronSights=true
+    bCanBeReloaded=true
+    bReloadFromMagazine=true
+    BonesToLockOnEmpty(0)=RW_Bolt_Back
+    WeaponFireWaveForm=ForceFeedbackWaveform'FX_ForceFeedback_ARCH.Gunfire.Medium_Recoil'
 
 /*
     // Components
-    begin object name="SceneCapture2DComponent0"
-        TextureTarget=TextureRenderTarget2D'Wep_Mat_Lib.WEP_ScopeLense_Target'
-        FieldOfView=12.5000000
-    end object
     begin object name="FirstPersonMesh"
         ReplacementPrimitive=none
     end object
@@ -203,13 +236,13 @@ defaultproperties
     DroppedPickupMesh=StaticPickupComponent
     PickupFactoryMesh=StaticPickupComponent
 */
+
+    // Upgrade path
+    WeaponUpgrades.Empty
+
     // Miscellaneous
-    AimWarningDelay=(X=0.4000000,Y=0.8000000)
     LastFireInterval=0.3000000
     SceneCapture=SceneCapture2DComponent0
-    ScopeLenseMICTemplate=MaterialInstanceConstant'wep_1p_m24_mat.WEP_1P_M24_Scope_MAT'
-    ScopedSensitivityMod=8.0000000
-    bWarnAIWhenAiming=true
     bUseAdditiveMoveAnim=false
     EjectedShellForegroundDuration=1.5000000
     Components[0]=SceneCapture2DComponent0

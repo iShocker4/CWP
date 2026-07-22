@@ -74,6 +74,7 @@ simulated function InstantFireClient()
 
 DefaultProperties
 {
+	// ALTFIRE_FIREMODE
 	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'
 	FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
 	WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_InstantHit
@@ -84,8 +85,11 @@ DefaultProperties
 	PenetrationPower(ALTFIRE_FIREMODE)=1.5
 	Spread(ALTFIRE_FIREMODE)=0.01
 	AmmoCost(ALTFIRE_FIREMODE)=2
+
+	// Fire Effects
 	WeaponFireSnd(ALTFIRE_FIREMODE)=(DefaultCue=AkEvent'WW_WEP_AF2011.Play_WEP_AF2011_Fire_3P', FirstPersonCue=AkEvent'WW_WEP_AF2011.Play_WEP_AF2011_Fire_1P')
 	WeaponDryFireSnd(ALTFIRE_FIREMODE)=AkEvent'WW_WEP_SA_DesertEagle.Play_WEP_SA_DesertEagle_Handling_DryFire'
 
+	// Dual class
 	DualClass=class'CWP.CW_Pistol_DualAF2011Ex_AT'
 }

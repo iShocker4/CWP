@@ -18,8 +18,6 @@ simulated event SetWeapon()
 
 defaultproperties
 {
-	InventoryGroup=IG_Secondary
-
     // FOV [FFERRANDO NEEDS TO BE UPDATED TO G18]
 	MeshFOV=96
 	MeshIronSightFOV=55 //77
@@ -116,9 +114,11 @@ defaultproperties
 	bHasIronSights=true
 	bHasFlashlight=true
 
+	// Perk / Class
 	AssociatedPerkClasses(0)=class'KFPerk_Gunslinger' //Main Perk
 
-	// Inventory [FFERRANDO NEEDS TO BE RECHECKED FOR G18]
+	// Inventory / Grouping [FFERRANDO NEEDS TO BE RECHECKED FOR G18]
+	InventoryGroup=IG_Secondary
 	InventorySize=4 //Weight Ammount
 	GroupPriority=100
 	bCanThrow=true
@@ -126,7 +126,7 @@ defaultproperties
 	WeaponSelectTexture=Texture2D'wep_ui_g18c_tex.UI_WeaponSelect_g18c'
 	bIsBackupWeapon=false
 
-    //DUAL CLASS DECLARATION [FFERRANDO NEEDS TO BE UPDATED TO G18]
+    // Dual class [FFERRANDO NEEDS TO BE UPDATED TO G18]
 	DualClass=class'CW_Pistol_DualG18Ex' //Dual-wieldable yes
 
 	// Custom animations

@@ -51,17 +51,20 @@ simulated function NotifyBeginState()
 
 DefaultProperties
 {
+	// Inventory / Grouping
 	InventorySize=7
 	GroupPriority=75
 
+	// Ammo
 	MagazineCapacity[0]=5
 	SpareAmmoCapacity[0]=70
 	InitialSpareMags[0]=0
 
+	// DEFAULT_FIREMODE
     InstantHitDamage(DEFAULT_FIREMODE)=350
     FireInterval(DEFAULT_FIREMODE)=0.85 // 60 RPM
 
-	// Weapon Upgrades
+	// Upgrades
 //	WeaponUpgrades[1]=(Stats=((Stat=EWUS_Damage0, Scale=1.15f), (Stat=EWUS_Damage1, Scale=1.15f), (Stat=EWUS_Weight, Add=1)))
 //	WeaponUpgrades[2]=(Stats=((Stat=EWUS_Damage0, Scale=1.3f), (Stat=EWUS_Damage1, Scale=1.3f), (Stat=EWUS_Weight, Add=2)))
 }

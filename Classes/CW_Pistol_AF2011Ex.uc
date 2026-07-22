@@ -90,20 +90,24 @@ simulated function ProcessInstantHitEx(byte FiringMode, ImpactInfo Impact, optio
 
 defaultproperties
 {
+    // DEFAULT_FIREMODE
     WeaponFireTypes(DEFAULT_FIREMODE)=EWFT_InstantHit
 
     // DamageType ???????????????
 //    InstantHitDamageTypes(DEFAULT_FIREMODE)=class'KFDT_Ballistic_AF2011Ex'
 
     InstantHitDamageTypes(DEFAULT_FIREMODE)=class'KFDT_Ballistic_AF2011Ex'
+
+    // ALTFIRE_FIREMODE
     InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'KFDT_Ballistic_AF2011Ex'
 
-    // WeaponDef ???????????????
+    // Inventory / Grouping
     WeaponSelectTexture=Texture2D'WEP_UI_AF2001_TEX.UI_WeaponSelect_AF2011'
 
-    // Dual class ???????????????
+    // Dual class
     DualClass=class'CW_Pistol_DualAF2011Ex'
 
+	// Recoil
 	maxRecoilPitch=650  //650  //550
 	minRecoilPitch=650  //550  //550
 	maxRecoilYaw=225 //150

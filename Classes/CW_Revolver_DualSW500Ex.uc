@@ -29,12 +29,14 @@ DefaultProperties
 	maxRecoilPitch=850 //850
 	minRecoilPitch=850 //750
 	
-	// Damage
+	// DEFAULT_FIREMODE
 	InstantHitDamage(DEFAULT_FIREMODE)=190.0
-	InstantHitDamage(ALTFIRE_FIREMODE)=190.0
 	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'Custom_KFDT_Ballistic_SW500Ex'
+
+	// ALTFIRE_FIREMODE
+	InstantHitDamage(ALTFIRE_FIREMODE)=190.0
 	InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'Custom_KFDT_Ballistic_SW500Ex'
 	
-	// Other
+	// Single class
 	SingleClass=class'CWP.CW_Revolver_SW500Ex'
 }

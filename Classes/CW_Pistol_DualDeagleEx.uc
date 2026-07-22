@@ -64,8 +64,10 @@ DefaultProperties
 	FireInterval(DEFAULT_FIREMODE)=+0.113 // .11
 	FireInterval(ALTFIRE_FIREMODE)=+0.113 // .11
 
-	// Other
+	// Single class
 	SingleClass=class'CWP.CW_Pistol_DeagleEx'
+
+	// Upgrades
 	WeaponUpgrades.Empty
 //	WeaponUpgrades[2]=(Stats=((Stat=EWUS_Damage0, Scale=1.4f), (Stat=EWUS_Damage1, Scale=1.4f), (Stat=EWUS_Weight, Add=4)))
 }

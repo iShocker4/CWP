@@ -84,8 +84,11 @@ DefaultProperties
 	InstantHitDamage(ALTFIRE_FIREMODE)=91.0
 	PenetrationPower(ALTFIRE_FIREMODE)=2.0
 	Spread(ALTFIRE_FIREMODE)=0.01
+
+	// Fire Effects
 	WeaponFireSnd(ALTFIRE_FIREMODE)=(DefaultCue=AkEvent'WW_WEP_SA_DesertEagle.Play_WEP_SA_DesertEagle_Fire_Single_M', FirstPersonCue=AkEvent'WW_WEP_SA_DesertEagle.Play_WEP_SA_DesertEagle_Fire_Single_S')
 	WeaponDryFireSnd(ALTFIRE_FIREMODE)=AkEvent'WW_WEP_SA_DesertEagle.Play_WEP_SA_DesertEagle_Handling_DryFire'
 
+	// Dual class
 	DualClass=class'CWP.CW_Pistol_DualDeagleEx_AT'
 }

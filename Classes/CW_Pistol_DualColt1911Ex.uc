@@ -25,9 +25,10 @@ DefaultProperties
 	maxRecoilPitch=450
 	minRecoilPitch=450
 	
-	// Other
+	// Single class
 	SingleClass=class'CWP.CW_Pistol_Colt1911Ex'
 
+	// Upgrades
 	WeaponUpgrades[1]=(Stats=((Stat=EWUS_Damage0, Scale=1.4f), (Stat=EWUS_Damage1, Scale=1.4f)))
 	WeaponUpgrades[2]=(Stats=((Stat=EWUS_Damage0, Scale=1.8f), (Stat=EWUS_Damage1, Scale=1.8f), (Stat=EWUS_Weight, Add=2)))
 //	WeaponUpgrades[3]=(Stats=((Stat=EWUS_Damage0, Scale=2.0f), (Stat=EWUS_Damage1, Scale=2.0f), (Stat=EWUS_Weight, Add=4)))

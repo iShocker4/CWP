@@ -31,16 +31,27 @@ reliable client function ClientSetAltFire(bool bAltFire)
 
 DefaultProperties
 {
+	// Inventory / Grouping
 	// DroppedPickupClass=class'CW_DroppedPickup_Ex'
+
+	// Ammo
 	InitialSpareMags[0]=0
+
+	// Recoil
 	maxRecoilPitch=115
 	minRecoilPitch=115
 	maxRecoilYaw=90
 	minRecoilYaw=-90
 	RecoilRate=0.070
+
+	// DEFAULT_FIREMODE
 	InstantHitDamage(DEFAULT_FIREMODE)=33.0
 	Spread(DEFAULT_FIREMODE)=0.0065
+
+	// ALTFIRE_FIREMODE
 	InstantHitDamage(ALTFIRE_FIREMODE)=33.0
 	Spread(ALTFIRE_FIREMODE)=0.0065
+
+	// Upgrades
 	WeaponUpgrades.Empty
 }
