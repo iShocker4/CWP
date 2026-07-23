@@ -3,7 +3,7 @@ class KFWeapDef_M107_Ex extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Damage: 400 at 150 RPM, penetration 8"
+	return "*Damage: 300 at 200 RPM, penetration 8"
 		$ "\n*Control power: stumble 0, no knockdown, gun hit 300"
 		$ "\n*Recoil: near M99, but slightly softer"
 		$ "\n*Weight: 10, 10-round mag";

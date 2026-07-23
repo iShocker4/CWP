@@ -123,7 +123,7 @@ static simulated function float CalculateTraderWeaponStatFireRate()
 defaultproperties
 {
     // Inventory / Grouping
-    InventorySize=7
+    InventorySize=8
     GroupPriority=75.0000000
     WeaponSelectTexture=Texture2D'WEP_M24_TEX.UI_M24'
     AssociatedPerkClasses(0)=class'KFGame.KFPerk_Sharpshooter'
@@ -157,9 +157,9 @@ defaultproperties
     MuzzleFlashTemplateName="WEP_Mosin_ARCH.Wep_Mosin_MuzzleFlash"
 
     // Ammo
-    MagazineCapacity=6
-    SpareAmmoCapacity=114
-    InitialSpareMags=5
+    MagazineCapacity=8
+    SpareAmmoCapacity=192
+    InitialSpareMags=0
 
     // Zooming / Position
     PlayerViewOffset=(X=8.2500000,Y=13.0000000,Z=-3.5000000)
@@ -192,7 +192,7 @@ defaultproperties
     WeaponProjectiles(DEFAULT_FIREMODE)=class'KFGameContent.KFProj_Bullet_MosinNagant'
     InstantHitDamage(DEFAULT_FIREMODE)=400.0000000 //450
     InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_M24'
-    FireInterval(DEFAULT_FIREMODE)=0.8500000
+    FireInterval(DEFAULT_FIREMODE)=0.85714
     PenetrationPower(DEFAULT_FIREMODE)=2.0000000
     Spread(DEFAULT_FIREMODE)=0.0010000
     FireOffset=(X=25.0000000,Y=3.0000000,Z=-2.5000000)
@@ -206,7 +206,7 @@ defaultproperties
 
     // BASH_FIREMODE (3)
     InstantHitDamageTypes(BASH_FIREMODE)=class'KFGameContent.KFDT_Piercing_MosinNagant'
-    InstantHitDamage(BASH_FIREMODE)=1000.0000000
+    InstantHitDamage(BASH_FIREMODE)=500.0000000
 
     // Fire effects
     WeaponFireSnd(0)=(DefaultCue=AkEvent'WW_WEP_MosinNagant.Play_MosinNagant_Shoot_3P',FirstPersonCue=AkEvent'WW_WEP_MosinNagant.Play_MosinNagant_Shoot_1P')

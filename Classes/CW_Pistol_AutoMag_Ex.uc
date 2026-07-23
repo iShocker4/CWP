@@ -88,7 +88,7 @@ defaultproperties
 */
 
     // DEFAULT_FIREMODE
-    PenetrationPower(DEFAULT_FIREMODE)=4.0000000
+    PenetrationPower(DEFAULT_FIREMODE)=2.0000000
     FiringStatesArray(DEFAULT_FIREMODE)=WeaponSingleFiring
     WeaponProjectiles(DEFAULT_FIREMODE)=class'KFGameContent.KFProj_Bullet_Pistol50AE'
     FireInterval(DEFAULT_FIREMODE)=0.2000000

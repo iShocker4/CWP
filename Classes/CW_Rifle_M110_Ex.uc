@@ -32,7 +32,7 @@ simulated function BeginFire(byte FireModeNum)
 defaultproperties
 {
     // Inventory / Grouping
-    InventorySize=6
+    InventorySize=8
     WeaponSelectTexture=Texture2D'WEP_M110_TEX.M110_UI'
     AssociatedPerkClasses(0)=class'KFGame.KFPerk_Sharpshooter'
 
@@ -67,9 +67,9 @@ defaultproperties
     MuzzleFlashTemplateName="WEP_M110_ARCH.Wep_AR15_9MM_MuzzleFlash"
 
     // Ammo
-    MagazineCapacity=20
-    SpareAmmoCapacity=240
-    InitialSpareMags=6
+    MagazineCapacity=25
+    SpareAmmoCapacity=375
+    InitialSpareMags=0
 
     // Zooming / Position
     PlayerViewOffset=(X=9.0000000,Y=10.0000000,Z=-4.0000000)
@@ -95,10 +95,10 @@ defaultproperties
     FiringStatesArray(0)=WeaponSingleFiring
     WeaponFireTypes(DEFAULT_FIREMODE)=EWFT_InstantHit
     WeaponProjectiles(0)=class'KFGameContent.KFProj_Bullet_M14EBR'
-    InstantHitDamage(0)=100.0000000 //110
+    InstantHitDamage(0)=121.0000000 //110
     InstantHitDamageTypes(0)=class'CWP.KFDT_Ballistic_M110'
-    FireInterval(0)=0.2500000 //0.18
-    PenetrationPower(0)=3.0000000
+    FireInterval(0)=0.1500000 //0.18
+    PenetrationPower(0)=2.0000000
     Spread(0)=0.0010000
     FireOffset=(X=30.0000000,Y=4.5000000,Z=-4.0000000)
 
@@ -110,7 +110,7 @@ defaultproperties
 
     // BASH_FIREMODE (3)
     InstantHitDamageTypes(3)=class'KFGameContent.KFDT_Bludgeon_AR15'
-    InstantHitDamage(3)=240.0000000
+    InstantHitDamage(3)=2000.0000000
 
     // Fire effects
     WeaponFireSnd(0)=(DefaultCue=AkEvent'WW_WEP_MP7.Play_MP7_Fire_3P_Single',FirstPersonCue=AkEvent'WW_WEP_MP7.Play_MP7_Fire_1P_Single')

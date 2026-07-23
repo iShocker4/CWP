@@ -41,7 +41,7 @@ defaultproperties
 
 	// Ammo
 	MagazineCapacity[0]=33 //Magazine ammount
-	SpareAmmoCapacity[0]=462 //spare ammo Ammount
+	SpareAmmoCapacity[0]=792 //spare ammo Ammount
 	InitialSpareMags[0]=0 //starting spare magazines Ammount
 	bCanBeReloaded=true
 	bReloadFromMagazine=true
@@ -75,7 +75,7 @@ defaultproperties
 	WeaponProjectiles(DEFAULT_FIREMODE)=class'KFProj_Bullet_G18CEx'
 	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'KFDT_Ballistic_G18CEx' //DEFAULT & ALT MODE TYPE DAMAGE
 	FireInterval(DEFAULT_FIREMODE)=+0.075 // 800 RPM //Single Default Firemode (Automatic) firerate
-	Spread(DEFAULT_FIREMODE)=0.06
+	Spread(DEFAULT_FIREMODE)=0.03
 	InstantHitDamage(DEFAULT_FIREMODE)=37 //39 //41 // DEFAULT & ALT MODE DAMAGE DAMAGE
 	PenetrationPower(DEFAULT_FIREMODE)=0.0 //Default Firemode (Automatic) & Altfire Firemode (Single Fire) penetration
 	PenetrationDamageReductionCurve(DEFAULT_FIREMODE)=(Points=((InVal=0.f,OutVal=0.f),(InVal=1.f, OutVal=1.f))) //Default Firemode (Automatic) & Altfire Firemode (Single Fire) penetration
@@ -88,7 +88,7 @@ defaultproperties
 	InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'KFDT_Ballistic_G18cEx' //DEFAULT & ALT MODE TYPE DAMAGE
 	FireInterval(ALTFIRE_FIREMODE)=+0.175 // 343 RPM //Single Altfire Firemode (Single Fire) firerate
 	InstantHitDamage(ALTFIRE_FIREMODE)=37 //39 //41 //DEFAULT & ALT MODE DAMAGE DAMAGE
-	Spread(ALTFIRE_FIREMODE)=0.015
+	Spread(ALTFIRE_FIREMODE)=0.0125
 	PenetrationPower(ALTFIRE_FIREMODE)=0.0 //Default Firemode (Automatic) & Altfire Firemode (Single Fire) penetration
 	PenetrationDamageReductionCurve(ALTFIRE_FIREMODE)=(Points=((InVal=0.f,OutVal=0.f),(InVal=1.f, OutVal=1.f))) //Default Firemode (Automatic) & Altfire Firemode (Single Fire) penetration
     

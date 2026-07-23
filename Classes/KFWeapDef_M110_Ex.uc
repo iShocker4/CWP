@@ -3,11 +3,10 @@ class KFWeapDef_M110_Ex extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Damage: 100 at 300 RPM, penetration 3"
-		$ "\n*Control power: stumble 25, no knockdown, no stun"
+	return "*Damage: 121 at 400 RPM, penetration 2"
+		$ "\n*Control power: stumble 10, no knockdown, no stun"
 		$ "\n*Recoil: heavier than M14, controlled for rapid fire"
-		$ "\n*Price: 70000"
-		$ "\n*Weight: 6, 20-round mag";
+		$ "\n*Weight: 8, 25-round mag";
 }
 
 defaultproperties

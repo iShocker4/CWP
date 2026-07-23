@@ -86,27 +86,27 @@ defaultproperties
 */
 
     // DEFAULT_FIREMODE (0)
-    PenetrationPower(DEFAULT_FIREMODE)=4.0000000
+    PenetrationPower(DEFAULT_FIREMODE)=2.0000000
     FiringStatesArray(DEFAULT_FIREMODE)=WeaponSingleFiring
     WeaponProjectiles(DEFAULT_FIREMODE)=class'KFGameContent.KFProj_Bullet_PistolDeagle'
-    FireInterval(DEFAULT_FIREMODE)=0.1300000
+    FireInterval(DEFAULT_FIREMODE)=0.1333333
     Spread(DEFAULT_FIREMODE)=0.0100000
-    InstantHitDamage(DEFAULT_FIREMODE)=140.0000000
+    InstantHitDamage(DEFAULT_FIREMODE)=127.0000000
     InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_AutoMag'
     WeaponFireTypes(DEFAULT_FIREMODE)=EWFT_InstantHit
 
     // ALTFIRE_FIREMODE (1)
-    PenetrationPower(ALTFIRE_FIREMODE)=4.0000000
+    PenetrationPower(ALTFIRE_FIREMODE)=2.0000000
     FiringStatesArray(ALTFIRE_FIREMODE)=WeaponSingleFiring
     WeaponProjectiles(ALTFIRE_FIREMODE)=class'KFGameContent.KFProj_Bullet_PistolDeagle'
-    FireInterval(ALTFIRE_FIREMODE)=0.1300000
+    FireInterval(ALTFIRE_FIREMODE)=0.1333333
     Spread(ALTFIRE_FIREMODE)=0.0100000
-    InstantHitDamage(ALTFIRE_FIREMODE)=140.0000000
+    InstantHitDamage(ALTFIRE_FIREMODE)=127.0000000
     InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'CWP.KFDT_Ballistic_AutoMag'
     WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_InstantHit
 
     // BASH_FIREMODE (3)
-    InstantHitDamage(BASH_FIREMODE)=240.0000000
+    InstantHitDamage(BASH_FIREMODE)=300.0000000
     InstantHitDamageTypes(BASH_FIREMODE)=class'KFGameContent.KFDT_Bludgeon_Deagle'
 
     // Fire Effects

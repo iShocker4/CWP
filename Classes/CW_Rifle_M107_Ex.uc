@@ -91,8 +91,8 @@ defaultproperties
 
     // Ammo
     MagazineCapacity=10
-    SpareAmmoCapacity=90
-    InitialSpareMags=3
+    SpareAmmoCapacity=140
+    InitialSpareMags=0
 
     // Zooming / Position
     PlayerViewOffset=(X=22.0000000,Y=11.5000000,Z=-4.0000000)
@@ -124,7 +124,7 @@ defaultproperties
     WeaponProjectiles(DEFAULT_FIREMODE)=class'KFGameContent.KFProj_Bullet_M99'
     InstantHitDamage(DEFAULT_FIREMODE)=300.0000000 //650
     InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_M107'
-    FireInterval(DEFAULT_FIREMODE)=0.4000000 //1.0
+    FireInterval(DEFAULT_FIREMODE)=0.3000000 //1.0
     PenetrationPower(DEFAULT_FIREMODE)=8.0000000
     Spread(DEFAULT_FIREMODE)=0.0001000
     FireOffset=(X=30.0000000,Y=3.0000000,Z=-2.5000000)
@@ -137,7 +137,7 @@ defaultproperties
 
     // BASH_FIREMODE (3)
     InstantHitDamageTypes(BASH_FIREMODE)=class'KFGameContent.KFDT_Bludgeon_M14EBR'
-    InstantHitDamage(BASH_FIREMODE)=120.0000000
+    InstantHitDamage(BASH_FIREMODE)=1200.0000000
 
 	// Fire Effects
 	WeaponFireSnd(DEFAULT_FIREMODE)=(DefaultCue=AkEvent'WW_WEP_M99.Play_WEP_M99_Fire_3P_Single', FirstPersonCue=AkEvent'WW_WEP_M99.Play_WEP_M99_Fire_1P_Single')

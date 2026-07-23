@@ -65,13 +65,13 @@ defaultproperties
 	BonesToLockOnEmpty(1)=RW_Bullets1
 
 	// Inventory and trader sorting
-	InventorySize=10
+	InventorySize=8
 	GroupPriority=45.0000000
 
 	// Ammo economy
 	MagazineCapacity=16
-	SpareAmmoCapacity=264
-	InitialSpareMags=3
+	SpareAmmoCapacity=288
+	InitialSpareMags=0
 
 	// Sights and view offsets
 	MeshIronSightFOV=77.0000000

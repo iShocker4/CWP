@@ -12,7 +12,11 @@ class KFWeapDef_Pistol_G18CEx extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Recoil: heavy automatic kick";
+	return "*Damage: 37 at 800 RPM auto / 343 RPM single, penetration 0"
+		$ "\n*Control power: stumble 12, no knockdown, no stun"
+		$ "\n*Recoil: heavy automatic kick"
+		$ "\n*Spread: 0.03 auto / 0.0125 single"
+		$ "\n*Weight: 4, 33-round mag";
 }
 
 DefaultProperties
@@ -31,5 +35,5 @@ DefaultProperties
 //	UpgradePrice[0]=1500
 //	UpgradeSellPrice[0]=1125
 
-	SharedUnlockId=SCU_G18C
+//	SharedUnlockId=SCU_G18C
 }
