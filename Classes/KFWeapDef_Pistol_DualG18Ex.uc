@@ -12,9 +12,9 @@ class KFWeapDef_Pistol_DualG18Ex extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Damage: 37 per bullet at 1200 RPM, penetration 0"
+	return "*Damage: 40 per bullet at 1200 RPM, penetration 0"
 		$ "\n*Control power: stumble 12, no knockdown, no stun"
-		$ "\n*Recoil: heavy dual automatic kick"
+		$ "\n*Recoil: horizontal kick reduced 60%, vertical unchanged"
 		$ "\n*Spread: 0.03"
 		$ "\n*Weight: 8, 66-round mag";
 }

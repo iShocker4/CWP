@@ -5,10 +5,10 @@ defaultproperties
 {
     WeaponDef=Class'CWP.KFWeapDef_M110_Ex'
     ModifierPerkList(0)=class'KFPerk_Sharpshooter'
-    StunPower=0.0000000 //300
+    StunPower=30.0000000 //300
     KnockdownPower=0.0000000
-    StumblePower=10.0000000
-    GunHitPower=0.0000000
+    StumblePower=20.0000000
+    GunHitPower=100.0000000
     KDamageImpulse=900.0000000
     KDeathVel=100.0000000
     KDeathUpKick=-300.0000000

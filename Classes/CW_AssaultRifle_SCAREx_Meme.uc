@@ -8,9 +8,16 @@ Simulated event SetWeapon()
 	class'Utils'.static.ApplyCustomSkin(self, class'KFGameContent.KFWeap_AssaultRifle_SCAR');
 }
 
+// GetReloadRateScale — รีโหลดเร็วขึ้น 15% ถ้ายิงไม่หมดแม็ก (ยังมีกระสุนเหลือ), 10% ถ้ายิงหมดแม็ก
+// พารามิเตอร์: ไม่มี
+// คืนค่า: float - ตัวคูณความเร็วรีโหลด
 simulated function float GetReloadRateScale()
 {
-	return Super.GetReloadRateScale() * 0.85f;
+	if (AmmoCount[0] > 0)
+	{
+		return Super.GetReloadRateScale() * 0.85f; // ไม่หมดแม็ก: เร็วขึ้น 15%
+	}
+	return Super.GetReloadRateScale() * 0.9f; // หมดแม็ก: เร็วขึ้น 10%
 }
 
 /*
@@ -45,7 +52,7 @@ DefaultProperties
 {
 	// Ammo
 	MagazineCapacity[0]=30 //20
-	SpareAmmoCapacity[0]=420 //340
+	SpareAmmoCapacity[0]=570 //340
 	InitialSpareMags[0]=0
 	
 	// Recoil

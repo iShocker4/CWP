@@ -16,6 +16,18 @@ simulated event SetWeapon()
 	class'Utils'.static.ApplyCustomSkin(self, class'KFGameContent.KFWeap_Pistol_G18C');
 }
 
+// GetReloadRateScale — รีโหลดเร็วขึ้น 20% ถ้ายิงไม่หมดแม็ก (ยังมีกระสุนเหลือ), 10% ถ้ายิงหมดแม็ก
+// พารามิเตอร์: ไม่มี
+// คืนค่า: float - ตัวคูณความเร็วรีโหลด
+simulated function float GetReloadRateScale()
+{
+	if (AmmoCount[0] > 0)
+	{
+		return Super.GetReloadRateScale() * 0.8; // ไม่หมดแม็ก: เร็วขึ้น 20%
+	}
+	return Super.GetReloadRateScale() * 0.9; // หมดแม็ก: เร็วขึ้น 10%
+}
+
 defaultproperties
 {
     // FOV [FFERRANDO NEEDS TO BE UPDATED TO G18]
@@ -52,8 +64,8 @@ defaultproperties
 	// Recoil
 	maxRecoilPitch=300 //220 //165 //150 //100
 	minRecoilPitch=225 //165 //125 //112 //75
-	maxRecoilYaw=85
-	minRecoilYaw=-85
+	maxRecoilYaw=34 //85, -60%
+	minRecoilYaw=-34 //-85, -60%
 	RecoilRate=0.045
 	RecoilMaxYawLimit=500
 	RecoilMinYawLimit=65035
@@ -76,7 +88,7 @@ defaultproperties
 	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'KFDT_Ballistic_G18CEx' //DEFAULT & ALT MODE TYPE DAMAGE
 	FireInterval(DEFAULT_FIREMODE)=+0.075 // 800 RPM //Single Default Firemode (Automatic) firerate
 	Spread(DEFAULT_FIREMODE)=0.03
-	InstantHitDamage(DEFAULT_FIREMODE)=37 //39 //41 // DEFAULT & ALT MODE DAMAGE DAMAGE
+	InstantHitDamage(DEFAULT_FIREMODE)=40 //37, +3
 	PenetrationPower(DEFAULT_FIREMODE)=0.0 //Default Firemode (Automatic) & Altfire Firemode (Single Fire) penetration
 	PenetrationDamageReductionCurve(DEFAULT_FIREMODE)=(Points=((InVal=0.f,OutVal=0.f),(InVal=1.f, OutVal=1.f))) //Default Firemode (Automatic) & Altfire Firemode (Single Fire) penetration
 
@@ -87,7 +99,7 @@ defaultproperties
 	WeaponProjectiles(ALTFIRE_FIREMODE)=class'KFProj_Bullet_G18cEx'
 	InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'KFDT_Ballistic_G18cEx' //DEFAULT & ALT MODE TYPE DAMAGE
 	FireInterval(ALTFIRE_FIREMODE)=+0.175 // 343 RPM //Single Altfire Firemode (Single Fire) firerate
-	InstantHitDamage(ALTFIRE_FIREMODE)=37 //39 //41 //DEFAULT & ALT MODE DAMAGE DAMAGE
+	InstantHitDamage(ALTFIRE_FIREMODE)=40 //37, +3
 	Spread(ALTFIRE_FIREMODE)=0.0125
 	PenetrationPower(ALTFIRE_FIREMODE)=0.0 //Default Firemode (Automatic) & Altfire Firemode (Single Fire) penetration
 	PenetrationDamageReductionCurve(ALTFIRE_FIREMODE)=(Points=((InVal=0.f,OutVal=0.f),(InVal=1.f, OutVal=1.f))) //Default Firemode (Automatic) & Altfire Firemode (Single Fire) penetration

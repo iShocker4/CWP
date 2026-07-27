@@ -39,7 +39,7 @@ DefaultProperties
 	// only the firing state/icon need to switch to full-auto
 	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'
 	FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
-	FireInterval(ALTFIRE_FIREMODE)=+0.14
+	FireInterval(ALTFIRE_FIREMODE)=+0.11 //0.14, matched to vanilla KFWeap_Pistol_DualDeagle
 
 	// Single class
 	SingleClass=class'CWP.CW_Pistol_DeagleEx_AT'

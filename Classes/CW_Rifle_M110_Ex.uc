@@ -67,8 +67,8 @@ defaultproperties
     MuzzleFlashTemplateName="WEP_M110_ARCH.Wep_AR15_9MM_MuzzleFlash"
 
     // Ammo
-    MagazineCapacity=25
-    SpareAmmoCapacity=375
+    MagazineCapacity=30
+    SpareAmmoCapacity=570
     InitialSpareMags=0
 
     // Zooming / Position
@@ -92,29 +92,29 @@ defaultproperties
     RecoilISMinPitchLimit=65460
 
     // DEFAULT_FIREMODE (0) - Single
-    FiringStatesArray(0)=WeaponSingleFiring
+    FiringStatesArray(DEFAULT_FIREMODE)=WeaponSingleFiring
     WeaponFireTypes(DEFAULT_FIREMODE)=EWFT_InstantHit
-    WeaponProjectiles(0)=class'KFGameContent.KFProj_Bullet_M14EBR'
-    InstantHitDamage(0)=121.0000000 //110
-    InstantHitDamageTypes(0)=class'CWP.KFDT_Ballistic_M110'
-    FireInterval(0)=0.1500000 //0.18
-    PenetrationPower(0)=2.0000000
-    Spread(0)=0.0010000
+    WeaponProjectiles(DEFAULT_FIREMODE)=class'KFGameContent.KFProj_Bullet_M14EBR'
+    InstantHitDamage(DEFAULT_FIREMODE)=138.0000000 //110
+    InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_M110'
+    FireInterval(DEFAULT_FIREMODE)=0.2000000 //0.18
+    PenetrationPower(DEFAULT_FIREMODE)=2.0000000
+    Spread(DEFAULT_FIREMODE)=0.0010000
     FireOffset=(X=30.0000000,Y=4.5000000,Z=-4.0000000)
 
     // ALTFIRE_FIREMODE (1)
-    FiringStatesArray(1)=WeaponSingleFiring
+    FiringStatesArray(ALTFIRE_FIREMODE)=WeaponSingleFiring
     WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_None
-    InstantHitDamageTypes(1)=class'KFGame.KFDT_Ballistic'
-    FireInterval(1)=1.0000000
+    InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'KFGame.KFDT_Ballistic'
+    FireInterval(ALTFIRE_FIREMODE)=1.0000000
 
     // BASH_FIREMODE (3)
-    InstantHitDamageTypes(3)=class'KFGameContent.KFDT_Bludgeon_AR15'
-    InstantHitDamage(3)=2000.0000000
+    InstantHitDamageTypes(BASH_FIREMODE)=class'KFGameContent.KFDT_Bludgeon_AR15'
+    InstantHitDamage(BASH_FIREMODE)=2000.0000000
 
     // Fire effects
-    WeaponFireSnd(0)=(DefaultCue=AkEvent'WW_WEP_MP7.Play_MP7_Fire_3P_Single',FirstPersonCue=AkEvent'WW_WEP_MP7.Play_MP7_Fire_1P_Single')
-    WeaponDryFireSnd(0)=AkEvent'WW_WEP_SA_MedicSMG.Play_SA_MedicSMG_Handling_DryFire'
+    WeaponFireSnd(DEFAULT_FIREMODE)=(DefaultCue=AkEvent'WW_WEP_MP7.Play_MP7_Fire_3P_Single',FirstPersonCue=AkEvent'WW_WEP_MP7.Play_MP7_Fire_1P_Single')
+    WeaponDryFireSnd(DEFAULT_FIREMODE)=AkEvent'WW_WEP_SA_MedicSMG.Play_SA_MedicSMG_Handling_DryFire'
 
     // Custom animations
     FireSightedAnims(0)=Shoot_Iron
