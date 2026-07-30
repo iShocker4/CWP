@@ -41,7 +41,7 @@ DefaultProperties
 {
 	// Ammo
 	MagazineCapacity[0]=20
-	SpareAmmoCapacity[0]=340
+	SpareAmmoCapacity[0]=480
 	InitialSpareMags[0]=0
 	
 	// Recoil

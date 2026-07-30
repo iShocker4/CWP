@@ -125,6 +125,6 @@ defaultproperties
 	// Recoil
 	maxRecoilPitch=650  //650  //550
 	minRecoilPitch=650  //550  //550
-	maxRecoilYaw=225 //150
-	minRecoilYaw=-225 //150
+	maxRecoilYaw=0 //225, //150
+	minRecoilYaw=0 //-225, //-150
 }
