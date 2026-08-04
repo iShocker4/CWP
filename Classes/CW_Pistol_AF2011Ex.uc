@@ -118,6 +118,7 @@ defaultproperties
 
     // Custom copy of the AF2011 attachment archetype with Deagle's tracer (TracerInfos)
     AttachmentArchetypeName="AF2011_Custom_Ex.Wep_AF2001_3P_Ex"
+    AttachmentArchetype=KFWeaponAttachment'AF2011_Custom_Ex.Wep_AF2001_3P_Ex'
 
     // Dual class
     DualClass=class'CW_Pistol_DualAF2011Ex'

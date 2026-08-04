@@ -131,6 +131,7 @@ defaultproperties
 
     // Custom copy of the Dual AF2011 attachment archetype with Deagle's tracer (TracerInfos)
     AttachmentArchetypeName="AF2011_Custom_Ex.Wep_Dual_AF2001_3P_Ex"
+    AttachmentArchetype=KFWeapAttach_DualBase'AF2011_Custom_Ex.Wep_Dual_AF2001_3P_Ex'
 
 	// Recoil
 	maxRecoilPitch=650  //650  //550
