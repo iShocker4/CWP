@@ -2,9 +2,7 @@ class KFWeapDef_Ak12_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 40 -> 46"
-		$ "\n*Weight: 6 -> 7"
-		$ "\n*Recoil: steadier burst control";
+	return Localize("CW_AssaultRifle_AK12_Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

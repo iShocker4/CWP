@@ -5,7 +5,7 @@
 // สร้างใหม่จาก KFWeap_RifleBase (ไม่ได้สืบทอดจาก FNFal ต้นฉบับ)
 // - ความเสียหาย 60 (จาก 70), RPM 700 (จาก 606)
 // - กระสุนสำรอง 280 (จาก 160), Penetration 1.0 (จาก 2.0)
-// - รีโหลดเร็วขึ้น 10% (คูณ 0.9)
+// - รีโหลดเร็วขึ้น 5% (คูณ 0.95)
 // - Recoil 165-165 vertical, -125~145 horizontal
 // - Perk: Commando
 // - ซิงค์โหมดยิง (auto/semi) ระหว่าง client-server
@@ -63,7 +63,7 @@ simulated function AltFireMode()
 }
 
 // GetReloadRateScale — คืนค่าตัวคูณความเร็วรีโหลด
-//   ทำให้รีโหลดเร็วขึ้น 10% (คูณ 0.9)
+//   ทำให้รีโหลดเร็วขึ้น 5% (คูณ 0.95)
 // พารามิเตอร์: ไม่มี
 // คืนค่า: float - ตัวคูณความเร็วรีโหลด
 SimuLated function float GetReloadRateScale()

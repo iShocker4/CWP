@@ -3,11 +3,7 @@ class KFWeapDef_JCEx extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Damage: 113"
-		$ "\n*Fire rate: 300 RPM"
-		$ "\n*Recoil: moderate and controlled for its power"
-		$ "\n*Weight: 4"
-		$ "\n*Heavy bash damage: 300";
+	return Localize("CW_Pistol_JCEx", "ItemDescription", "CWP");
 }
 
 defaultproperties

@@ -17,8 +17,7 @@ static function string GetItemCategory()
 
 static function string GetItemDescription()
 {
-	return "*Damage: 80 -> 90"
-		$ "\n*Recoil: slightly stronger vertical kick";
+	return Localize("CW_Rifle_M14EBREx", "ItemDescription", "CWP");
 }
 
 DefaultProperties

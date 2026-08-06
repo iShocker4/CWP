@@ -105,7 +105,7 @@ defaultproperties
 	FireSightedAnims(2)=Shoot_Iron3
 
 	// DEFAULT_FIREMODE (0)
-	PenetrationPower(0)=4.0000000
+	PenetrationPower(0)=2.0000000
 	WeaponFireSnd(0)=(DefaultCue=AkEvent'WW_WEP_SA_SW500.Play_WEP_SA_SW500_Fire_3P',FirstPersonCue=AkEvent'WW_WEP_SA_SW500.Play_WEP_SA_SW500_Fire_1P')
 	WeaponDryFireSnd(0)=AkEvent'WW_WEP_SA_SW500.Play_WEP_SA_SW500_Handling_DryFire'
 	AssociatedPerkClasses(0)=class'KFGame.KFPerk_Gunslinger'

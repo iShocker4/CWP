@@ -12,10 +12,7 @@ class KFWeapDef_MosinNagantEx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 250 -> 350"
-		$ "\n*Sharpshooter reload: 25% faster"
-		$ "\n*Spare ammo: 60 -> 70"
-		$ "\n*Price: 700 -> 2500";
+	return Localize("CW_Rifle_MosinNagantEx", "ItemDescription", "CWP");
 }
 
 DefaultProperties

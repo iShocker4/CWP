@@ -2,7 +2,7 @@ class KFWeapDef_AA12Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return Localize("KFWeap_Shotgun_AA12", "ItemDescription", "KFGameContent");
+	return Localize("CW_Shotgun_AA12Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

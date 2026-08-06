@@ -12,4 +12,7 @@ simulated event SetWeapon()
 
 DefaultProperties
 {
+	// Support damage buff: +20% per pellet and grenade explosion.
+	InstantHitDamage(DEFAULT_FIREMODE)=33.6
+	ExplosionTemplate.Damage=240.0
 }

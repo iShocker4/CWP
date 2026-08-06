@@ -3,10 +3,7 @@ class KFWeapDef_AutoMagDual_Ex extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Damage: 127 per bullet at 450 RPM, penetration 2"
-		$ "\n*Control power: no knockdown/stumble, gun hit 150"
-		$ "\n*Recoil: stronger than Dual Deagle, below Dual SW500"
-		$ "\n*Weight: 8, 18-round mag";
+	return Localize("CW_Pistol_DualAutoMag_Ex", "ItemDescription", "CWP");
 }
 
 defaultproperties

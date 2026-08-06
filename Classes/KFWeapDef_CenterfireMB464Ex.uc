@@ -10,10 +10,7 @@ class KFWeapDef_CenterfireMB464Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 165 -> 180"
-		$ "\n*Sharpshooter/Gunslinger reload: 20% faster"
-		$ "\n*Recoil: slightly stronger vertical kick"
-		$ "\n*Draw and put-away are faster";
+	return Localize("CW_Rifle_CenterfireMB464Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

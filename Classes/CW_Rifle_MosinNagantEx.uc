@@ -30,6 +30,7 @@ simulated function NotifyBeginState()
 {
     local KFPerk InstigatorPerk;
 
+    ReloadSpeedMod = 1.0f;
     super(KFWeapon).NotifyBeginState();
 
     InstigatorPerk = GetPerk();
@@ -39,7 +40,7 @@ simulated function NotifyBeginState()
     if (InstigatorPerk.Class == class'KFGame.KFPerk_Sharpshooter')
     {
         if (!KFPerk_Sharpshooter(InstigatorPerk).IsTacticalReloadActive())
-            ReloadSpeedMod = 0.75f; // ไวขึ้น 15%
+            ReloadSpeedMod = 0.75f; // 25% faster
         else
             ReloadSpeedMod = 1.0f;
     }
@@ -59,6 +60,7 @@ DefaultProperties
 	MagazineCapacity[0]=5
 	SpareAmmoCapacity[0]=70
 	InitialSpareMags[0]=0
+	ReloadSpeedMod=1.0
 
 	// DEFAULT_FIREMODE
     InstantHitDamage(DEFAULT_FIREMODE)=350

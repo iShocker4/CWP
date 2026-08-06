@@ -2,10 +2,7 @@ class KFWeapDef_MedicSMG2_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Heal amount: 15 -> 10"
-		$ "\n*Dart cost: 40 -> 25"
-		$ "\n*Alt-fire shoots 2 darts"
-		$ "\n*Secondary-slot medic SMG";
+	return Localize("CW_SMG_Medic2_Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

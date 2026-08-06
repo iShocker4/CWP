@@ -37,6 +37,7 @@ simulated event SetWeapon()
 	local KFPerk_Sharpshooter SharpPerk;
 	local KFPerk_Gunslinger GunPerk;
 
+	ReloadspeedMod = 1.0f;
     super.SetWeapon();
 class'Utils'.static.ApplyCustomSkin(self, class'KFGameContent.KFWeap_Rifle_CenterfireMB464');
 
@@ -84,6 +85,7 @@ simulated function NotifyBeginState()
 {
     local KFPerk InstigatorPerk;
 
+	ReloadspeedMod = 1.0f;
     super(KFWeapon).NotifyBeginState();
 
     InstigatorPerk = GetPerk();

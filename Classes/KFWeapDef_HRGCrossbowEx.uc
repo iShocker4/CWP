@@ -2,11 +2,7 @@ class KFWeapDef_HRGCrossbowEx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Medic crossbow with 40 HP heal darts"
-		$ "\n*Ammo: 34 -> 14"
-		$ "\n*Weight: 7 -> 6"
-		$ "\n*Recoil: stronger than standard crossbows"
-		$ "\n*No dart auto-track";
+	return Localize("CW_Bow_HRGCrossbowEx", "ItemDescription", "CWP");
 }
 
 DefaultProperties

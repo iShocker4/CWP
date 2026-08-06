@@ -2,7 +2,7 @@ class KFWeapDef_MedicRifle_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Recoil: slightly stronger vertical kick";
+	return Localize("CW_AssaultRifle_Medic_Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

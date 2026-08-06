@@ -2,7 +2,7 @@ class KFWeapDef_M4Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return Localize("KFWeap_Shotgun_M4", "ItemDescription", "KFGameContent");
+	return Localize("CW_Shotgun_M4Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

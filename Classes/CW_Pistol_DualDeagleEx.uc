@@ -21,23 +21,16 @@ simulated event SetWeapon()
 	class'Utils'.static.ApplyCustomSkin(self, class'KFGameContent.KFWeap_Pistol_DualDeagle');
 }
 
-/*
-// GetReloadRateScale — คืนค่าตัวคูณความเร็วรีโหลด
-//   ทำให้รีโหลดเร็วขึ้น 10% (คูณ 0.9)
-//   (มีโค้ดเดิมที่ comment ไว้สำหรับ empty reload ช้าลง 1.2x)
-// พารามิเตอร์: ไม่มี
-// คืนค่า: float - ตัวคูณความเร็วรีโหลด
+// Reload 20% faster when the current magazine still has ammunition.
 simulated function float GetReloadRateScale()
 {
-/*
-	if(AmmoCount[0] <= 0)
+	if (AmmoCount[0] > 0)
 	{
-		return Super.GetReloadRateScale() * 1.20f; //1.1
+		return Super.GetReloadRateScale() * 0.8f;
 	}
-*/
-	return Super.GetReloadRateScale() * 0.95f; //0.75
+
+	return Super.GetReloadRateScale();
 }
-*/
 
 // DenyPickupQuery — ตรวจสอบว่าอนุญาตให้เก็บอาวุธนี้หรือไม่
 //   ปฏิเสธถ้า: ไม่ระบุ ItemClass, เป็นปืนเดี่ยวตัวเดียวกัน, หรือ PackageKey ซ้ำ

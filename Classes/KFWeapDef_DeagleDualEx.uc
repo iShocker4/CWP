@@ -10,8 +10,7 @@ class KFWeapDef_DeagleDualEx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Fire rate: 545 -> 531 RPM"
-		$ "\n*Recoil: stronger vertical kick";
+	return Localize("CW_Pistol_DualDeagleEx", "ItemDescription", "CWP");
 }
 
 DefaultProperties

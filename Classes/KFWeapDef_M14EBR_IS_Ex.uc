@@ -3,8 +3,7 @@ class KFWeapDef_M14EBR_IS_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 80 -> 90"
-		$ "\n*Recoil: heavier when aiming down sights";
+	return Localize("CW_Rifle_M14EBR_IS_Ex", "ItemDescription", "CWP");
 }
 
 

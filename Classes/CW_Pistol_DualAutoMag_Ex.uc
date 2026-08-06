@@ -91,7 +91,7 @@ defaultproperties
     WeaponProjectiles(DEFAULT_FIREMODE)=class'KFGameContent.KFProj_Bullet_PistolDeagle'
     FireInterval(DEFAULT_FIREMODE)=0.1333333
     Spread(DEFAULT_FIREMODE)=0.0100000
-    InstantHitDamage(DEFAULT_FIREMODE)=127.0000000
+    InstantHitDamage(DEFAULT_FIREMODE)=167.0000
     InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_AutoMag'
     WeaponFireTypes(DEFAULT_FIREMODE)=EWFT_InstantHit
 
@@ -101,7 +101,7 @@ defaultproperties
     WeaponProjectiles(ALTFIRE_FIREMODE)=class'KFGameContent.KFProj_Bullet_PistolDeagle'
     FireInterval(ALTFIRE_FIREMODE)=0.1333333
     Spread(ALTFIRE_FIREMODE)=0.0100000
-    InstantHitDamage(ALTFIRE_FIREMODE)=127.0000000
+    InstantHitDamage(ALTFIRE_FIREMODE)=167.0000
     InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'CWP.KFDT_Ballistic_AutoMag'
     WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_InstantHit
 

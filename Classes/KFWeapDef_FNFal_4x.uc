@@ -11,10 +11,7 @@ class KFWeapDef_FNFal_4x extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Damage: 70 -> 75"
-		$ "\n*Fire rate: 606 -> 496 RPM"
-		$ "\n*Recoil: heavier and pulls right"
-		$ "\n*Reload speed: 5% faster";
+	return Localize("CW_AssaultRifle_FNFal_4xEx", "ItemDescription", "CWP");
 }
 
 DefaultProperties

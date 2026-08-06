@@ -12,4 +12,7 @@ simulated event SetWeapon()
 
 DefaultProperties
 {
+	// SWAT damage buff: +35% per bullet.
+	InstantHitDamage(DEFAULT_FIREMODE)=21.6
+	InstantHitDamage(ALTFIRE_FIREMODE)=21.6
 }

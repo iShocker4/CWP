@@ -2,8 +2,7 @@ class KFWeapDef_DeagleEx_AT extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return class'CWP.KFWeapDef_DeagleEx'.static.GetItemDescription()
-		$ "\n*Right-click toggles full-auto mode";
+	return Localize("CW_Pistol_DeagleEx_AT", "ItemDescription", "CWP");
 }
 
 DefaultProperties

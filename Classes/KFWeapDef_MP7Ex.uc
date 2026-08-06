@@ -2,7 +2,7 @@ class KFWeapDef_MP7Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return Localize("KFWeap_SMG_MP7", "ItemDescription", "KFGameContent");
+	return Localize("CW_SMG_MP7Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

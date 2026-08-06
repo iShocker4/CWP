@@ -32,6 +32,7 @@ simulated event SetWeapon()
 {
 	local KFPerk_Sharpshooter SharpPerk;
 
+	ReloadSpeedMod = 1.0f;
 	class'Utils'.static.CheckAndRemoveDuplicatedWeapon(Inventory,self);
 	super.SetWeapon();
 	class'Utils'.static.ApplyCustomSkin(self, class'KFGameContent.KFWeap_Rifle_M14EBR');
@@ -57,9 +58,10 @@ simulated event SetWeapon()
 
 simulated function NotifyBeginState()
 {
-    local KFPerk InstigatorPerk;
+	local KFPerk InstigatorPerk;
 
-    super(KFWeapon).NotifyBeginState();
+	ReloadSpeedMod = 1.0f;
+	super(KFWeapon).NotifyBeginState();
 
     InstigatorPerk = GetPerk();
     if (InstigatorPerk == none)
@@ -259,6 +261,7 @@ DefaultProperties
 	// Inventory / Grouping
 	EquipTime=0.20
 	PutDownTime=0.20
+	ReloadSpeedMod=1.0
 
 	// Recoil
 	maxRecoilPitch=225

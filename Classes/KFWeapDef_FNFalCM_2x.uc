@@ -11,11 +11,7 @@ class KFWeapDef_FNFalCM_2x extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Damage: 70 -> 60"
-		$ "\n*Scope: 4x -> 2x"
-		$ "\n*Fire rate: 606 -> 700 RPM"
-		$ "\n*Spare ammo: 160 -> 280"
-		$ "\n*Recoil: steadier";
+	return Localize("CW_AssaultRifle_FNFalCM_2xEx", "ItemDescription", "CWP");
 }
 
 DefaultProperties

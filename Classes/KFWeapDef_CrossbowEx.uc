@@ -9,7 +9,7 @@ class KFWeapDef_CrossbowEx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Reload speed: 10% faster";
+	return Localize("CW_Bow_CrossbowEx", "ItemDescription", "CWP");
 }
 
 DefaultProperties

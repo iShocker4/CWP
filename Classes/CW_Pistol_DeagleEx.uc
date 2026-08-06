@@ -19,6 +19,17 @@ simulated event SetWeapon()
 	class'Utils'.static.ApplyCustomSkin(self, class'KFGameContent.KFWeap_Pistol_Deagle');
 }
 
+// Reload 20% faster when the current magazine still has ammunition.
+simulated function float GetReloadRateScale()
+{
+	if (AmmoCount[0] > 0)
+	{
+		return Super.GetReloadRateScale() * 0.8f;
+	}
+
+	return Super.GetReloadRateScale();
+}
+
 DefaultProperties
 {
 	// Ammo

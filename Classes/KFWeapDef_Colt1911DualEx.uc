@@ -2,7 +2,7 @@ class KFWeapDef_Colt1911DualEx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Recoil: slightly stronger vertical kick";
+	return Localize("CW_Pistol_DualColt1911Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

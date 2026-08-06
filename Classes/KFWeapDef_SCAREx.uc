@@ -2,8 +2,7 @@ class KFWeapDef_SCAREx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Alt-fire rate: 600 -> 625 RPM"
-		$ "\n*Recoil: slightly stronger vertical kick";
+	return Localize("CW_AssaultRifle_SCAREx", "ItemDescription", "CWP");
 }
 
 DefaultProperties

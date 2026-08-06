@@ -3,10 +3,7 @@ class KFWeapDef_M110_Ex extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Damage: 138 at 300 RPM, penetration 2"
-		$ "\n*Control power: stumble 20, no knockdown, stun 30"
-		$ "\n*Recoil: heavier than M14, controlled for rapid fire"
-		$ "\n*Weight: 8, 30-round mag";
+	return Localize("CW_Rifle_M110_Ex", "ItemDescription", "CWP");
 }
 
 defaultproperties

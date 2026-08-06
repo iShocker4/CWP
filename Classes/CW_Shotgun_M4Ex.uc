@@ -12,4 +12,6 @@ simulated event SetWeapon()
 
 DefaultProperties
 {
+	// Support damage buff: +15% per pellet.
+	InstantHitDamage(DEFAULT_FIREMODE)=34.5
 }

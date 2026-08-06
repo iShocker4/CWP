@@ -2,8 +2,7 @@ class KFWeapDef_Bullpup_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 32 -> 33"
-		$ "\n*Recoil: slightly steadier";
+	return Localize("CW_AssaultRifle_Bullpup_Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

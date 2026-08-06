@@ -9,8 +9,7 @@ class KFWeapDef_MG3Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 35 -> 50"
-		$ "\n*Reload speed: 20% faster";
+	return Localize("CW_LMG_MG3Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

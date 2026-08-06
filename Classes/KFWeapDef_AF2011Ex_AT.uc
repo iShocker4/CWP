@@ -2,8 +2,7 @@ class KFWeapDef_AF2011Ex_AT extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return class'CWP.KFWeapDef_AF2011Ex'.static.GetItemDescription()
-		$ "\n*Right-click toggles full-auto mode";
+	return Localize("CW_Pistol_AF2011Ex_AT", "ItemDescription", "CWP");
 }
 
 DefaultProperties

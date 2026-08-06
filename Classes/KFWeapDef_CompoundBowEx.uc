@@ -9,8 +9,7 @@ class KFWeapDef_CompoundBowEx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 250 -> 300"
-		$ "\n*Reload speed: 10% faster";
+	return Localize("CW_Bow_CompoundBowEx", "ItemDescription", "CWP");
 }
 
 DefaultProperties

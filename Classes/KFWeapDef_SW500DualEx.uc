@@ -2,10 +2,7 @@ class KFWeapDef_SW500DualEx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 160 -> 190"
-		$ "\n*Stumble power: 60 -> 50"
-		$ "\n*Reload speed: 40% faster"
-		$ "\n*Recoil: stronger vertical kick";
+	return Localize("CW_Revolver_DualSW500Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

@@ -10,7 +10,7 @@ class KFWeapDef_DeagleEx extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Recoil: stronger vertical kick";
+	return Localize("CW_Pistol_DeagleEx", "ItemDescription", "CWP");
 }
 
 DefaultProperties

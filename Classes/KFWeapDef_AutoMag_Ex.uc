@@ -3,10 +3,7 @@ class KFWeapDef_AutoMag_Ex extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Damage: 127 at 300 RPM, penetration 2"
-		$ "\n*Control power: no knockdown/stumble, gun hit 150"
-		$ "\n*Recoil: stronger than Deagle, below SW500"
-		$ "\n*Weight: 4, 9-round mag";
+	return Localize("CW_Pistol_AutoMag_Ex", "ItemDescription", "CWP");
 }
 
 defaultproperties

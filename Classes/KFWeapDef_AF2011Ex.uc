@@ -10,9 +10,7 @@ class KFWeapDef_AF2011Ex extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Control power removed: knockdown/stumble/gun hit set lower"
-		$ "\n*Recoil: stronger vertical kick"
-		$ "\n*Recoil: steadier side pull";
+	return Localize("CW_Pistol_AF2011Ex", "ItemDescription", "CWP");
 }
 DefaultProperties
 {

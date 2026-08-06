@@ -17,9 +17,7 @@ static function string GetItemCategory()
 
 static function string GetItemDescription()
 {
-	return "*Damage: 80 -> 121"
-		$ "\n*Recoil: slightly stronger vertical kick"
-		$ "\n*Sharpshooter reload: 35% faster";
+	return Localize("CW_Rifle_M14EBR_RS", "ItemDescription", "CWP");
 }
 
 DefaultProperties

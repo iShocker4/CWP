@@ -3,11 +3,7 @@ class KFWeapDef_DualJCEx extends KFWeaponDefinition
 
 static function string GetItemDescription()
 {
-	return "*Damage: 113 per bullet"
-		$ "\n*Dual fire rate: 545 RPM"
-		$ "\n*Recoil: moderate dual-pistol kick"
-		$ "\n*Weight: 8"
-		$ "\n*Heavy bash damage: 300";
+	return Localize("CW_Pistol_DualJCEx", "ItemDescription", "CWP");
 }
 
 defaultproperties

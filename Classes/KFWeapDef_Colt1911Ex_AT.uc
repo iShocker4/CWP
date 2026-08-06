@@ -2,8 +2,7 @@ class KFWeapDef_Colt1911Ex_AT extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return class'CWP.KFWeapDef_Colt1911Ex'.static.GetItemDescription()
-		$ "\n*Right-click toggles full-auto mode";
+	return Localize("CW_Pistol_Colt1911Ex_AT", "ItemDescription", "CWP");
 }
 
 DefaultProperties

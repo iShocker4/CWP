@@ -2,12 +2,7 @@ class KFWeapDef_Hemogoblin_NoBleed_Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Damage: 120 -> 100"
-		$ "\n*Magazine/spare ammo: 7/112 -> 6/56"
-		$ "\n*Heal amount: 25 -> 20"
-		$ "\n*DoT changed from bleeding to toxic"
-		$ "\n*Recoil: heavier than standard medic rifles"
-		$ "\n*Slows movement by 20%, without damage/attack debuff";
+	return Localize("CW_Rifle_Hemogoblin_Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

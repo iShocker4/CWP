@@ -2,7 +2,7 @@ class KFWeapDef_Colt1911Ex extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return "*Recoil: slightly stronger vertical kick";
+	return Localize("CW_Pistol_Colt1911Ex", "ItemDescription", "CWP");
 }
 
 DefaultProperties

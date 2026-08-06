@@ -2,8 +2,7 @@ class KFWeapDef_SW500DualEx_AT extends KFWeaponDefinition abstract;
 
 static function string GetItemDescription()
 {
-	return class'CWP.KFWeapDef_SW500DualEx'.static.GetItemDescription()
-		$ "\n*Right-click toggles full-auto mode";
+	return Localize("CW_Revolver_DualSW500Ex_AT", "ItemDescription", "CWP");
 }
 
 DefaultProperties
