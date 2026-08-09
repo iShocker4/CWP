@@ -35,6 +35,8 @@ simulated state WeaponFiring
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_Colt1911Ex_AT'
+
 	// ALTFIRE_FIREMODE already mirrors DEFAULT_FIREMODE stats in the base class,
 	// only the firing state/icon need to switch to full-auto
 	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'

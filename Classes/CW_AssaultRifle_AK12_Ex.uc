@@ -31,6 +31,8 @@ reliable client function ClientSetAltFire(bool bAltFire)
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_AK12_Ex'
+
 	// Inventory / Grouping
 	// DroppedPickupClass=class'CW_DroppedPickup_Ex'
 	InventorySize=7

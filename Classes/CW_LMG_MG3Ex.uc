@@ -19,5 +19,6 @@ simulated function float GetReloadRateScale()
 DefaultProperties
 {
 	// DEFAULT_FIREMODE
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_MG3Ex'
 	InstantHitDamage(DEFAULT_FIREMODE)=50.0 //35
 }

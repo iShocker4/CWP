@@ -185,6 +185,8 @@ function SetOriginalValuesFromPickup(KFWeapon PickedUpWeapon)
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_M14EBREx'
+
 	// Content
 	ScopeLenseMICTemplate=MaterialInstanceConstant'CustomScope_Ex.WEP_1P_M14EBR_Scope_MAT'
 

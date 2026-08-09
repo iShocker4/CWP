@@ -35,12 +35,14 @@ simulated state WeaponFiring
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_AF2011Ex_AT'
+
 	// ALTFIRE_FIREMODE
 	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'
 	FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
 	WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_InstantHit
 	WeaponProjectiles(ALTFIRE_FIREMODE)=class'KFProj_Bullet_PistolAF2011'
-	InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'KFDT_Ballistic_AF2011Ex'
+	InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'CWP.KFDT_Ballistic_AF2011Ex_AT'
 	FireInterval(ALTFIRE_FIREMODE)=+0.13
 	InstantHitDamage(ALTFIRE_FIREMODE)=53
 	PenetrationPower(ALTFIRE_FIREMODE)=1.5

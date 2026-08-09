@@ -12,6 +12,8 @@ simulated event SetWeapon()
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_Shotgun_S12Ex'
+
 	// Support damage buff: +20% per pellet and grenade explosion.
 	InstantHitDamage(DEFAULT_FIREMODE)=33.6
 	ExplosionTemplate.Damage=240.0

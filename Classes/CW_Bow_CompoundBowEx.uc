@@ -17,5 +17,6 @@ simulated function float GetReloadRateScale()
 DefaultProperties
 {
 	// DEFAULT_FIREMODE
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Piercing_CompoundBowEx'
 	InstantHitDamage(DEFAULT_FIREMODE)=300.0 //250
 }

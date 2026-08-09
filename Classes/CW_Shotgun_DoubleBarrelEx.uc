@@ -12,6 +12,8 @@ simulated event SetWeapon()
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_DBShotgunEx'
+
 	// Support damage buff: +10% per pellet.
 	InstantHitDamage(DEFAULT_FIREMODE)=27.5
 	InstantHitDamage(ALTFIRE_FIREMODE)=27.5

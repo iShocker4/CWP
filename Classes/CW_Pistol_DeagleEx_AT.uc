@@ -74,12 +74,14 @@ simulated function InstantFireClient()
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_DeagleEx_AT'
+
 	// ALTFIRE_FIREMODE — full-auto toggle, same stats as DEFAULT_FIREMODE
 	FireModeIconPaths(ALTFIRE_FIREMODE)=Texture2D'ui_firemodes_tex.UI_FireModeSelect_BulletAuto'
 	FiringStatesArray(ALTFIRE_FIREMODE)=WeaponFiring
 	WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_InstantHit
 	WeaponProjectiles(ALTFIRE_FIREMODE)=class'KFProj_Bullet_Pistol50AE'
-	InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'KFDT_Ballistic_Deagle'
+	InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'CWP.KFDT_Ballistic_DeagleEx_AT'
 	FireInterval(ALTFIRE_FIREMODE)=+0.2
 	InstantHitDamage(ALTFIRE_FIREMODE)=91.0
 	PenetrationPower(ALTFIRE_FIREMODE)=2.0

@@ -50,6 +50,8 @@ reliable client function ClientSetAltFire(bool bAltFire)
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_SCAREx_Meme'
+
 	// Ammo
 	MagazineCapacity[0]=30 //20
 	SpareAmmoCapacity[0]=570 //340

@@ -32,6 +32,8 @@ simulated function float GetReloadRateScale()
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_DeagleEx'
+
 	// Ammo
 	InitialSpareMags[0]=0
 

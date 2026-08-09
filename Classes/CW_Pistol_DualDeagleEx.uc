@@ -46,6 +46,8 @@ function bool DenyPickupQuery(class<Inventory> ItemClass, Actor Pickup)
 */
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_DeagleDualEx'
+
 	// Ammo
 	InitialSpareMags[0]=0
 

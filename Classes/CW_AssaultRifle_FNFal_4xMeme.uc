@@ -48,6 +48,8 @@ SimuLated function float GetReloadRateScale()
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_FNFal_4xMeme'
+
 	// Inventory / Grouping
 	InventorySize=9
 

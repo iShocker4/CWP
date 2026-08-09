@@ -12,6 +12,8 @@ simulated event SetWeapon()
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_MP7Ex'
+
 	// SWAT damage buff: +35% per bullet.
 	InstantHitDamage(DEFAULT_FIREMODE)=21.6
 	InstantHitDamage(ALTFIRE_FIREMODE)=21.6

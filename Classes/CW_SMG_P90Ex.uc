@@ -12,6 +12,8 @@ simulated event SetWeapon()
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_P90Ex'
+
 	// SWAT damage buff: +20% per bullet.
 	InstantHitDamage(DEFAULT_FIREMODE)=36.0
 	InstantHitDamage(ALTFIRE_FIREMODE)=36.0

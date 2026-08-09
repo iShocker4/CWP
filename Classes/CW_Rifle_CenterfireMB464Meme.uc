@@ -141,6 +141,8 @@ function bool DenyPickupQuery(class<Inventory> ItemClass, Actor Pickup)
 */
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_CenterfireMB464Meme'
+
 	// Inventory / Grouping
 	InventorySize=5
 	GroupPriority=54

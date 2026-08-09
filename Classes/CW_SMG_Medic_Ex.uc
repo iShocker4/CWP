@@ -35,6 +35,8 @@ function bool DenyPickupQuery(class<Inventory> ItemClass, Actor Pickup)
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_SMG_MedicEx'
+
 	// Inventory / Grouping
 	// DroppedPickupClass=class'CW_DroppedPickup_Ex'
 

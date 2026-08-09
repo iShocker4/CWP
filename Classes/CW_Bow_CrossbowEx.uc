@@ -16,4 +16,5 @@ simulated function float GetReloadRateScale()
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Piercing_CrossbowVanillaEx'
 }

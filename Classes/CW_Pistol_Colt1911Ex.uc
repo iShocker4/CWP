@@ -12,9 +12,11 @@ simulated event SetWeapon()
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_Colt1911Ex'
+
 	// Ammo
 	InitialSpareMags[0]=0
-	
+
 	// Recoil
 	maxRecoilPitch=450
 	minRecoilPitch=450

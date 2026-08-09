@@ -52,6 +52,8 @@ simulated function NotifyBeginState()
 
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_MosinNagantEx'
+
 	// Inventory / Grouping
 	InventorySize=7
 	GroupPriority=75

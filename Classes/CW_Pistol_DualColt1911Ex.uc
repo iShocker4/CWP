@@ -18,9 +18,11 @@ function bool DenyPickupQuery(class<Inventory> ItemClass, Actor Pickup)
 */
 DefaultProperties
 {
+	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_Colt1911DualEx'
+
 	// Ammo
 	InitialSpareMags[0]=0
-	
+
 	// Recoil
 	maxRecoilPitch=450
 	minRecoilPitch=450
