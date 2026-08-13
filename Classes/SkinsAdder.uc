@@ -69,6 +69,8 @@ DefaultProperties
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleDualEx',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualDeagle'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleEx_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_Deagle'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleDualEx_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualDeagle'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleEx_Meme',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_Deagle'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleDualEx_Meme',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualDeagle'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Colt1911Ex',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_Colt1911'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Colt1911DualEx',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualColt1911'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Colt1911Ex_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_Colt1911'))

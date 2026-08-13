@@ -42,6 +42,7 @@ simulated event Tick(float DeltaTime)
 DefaultProperties
 {
 	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_M14EBR_IS_Ex'
+	InstantHitDamage(DEFAULT_FIREMODE)=90.0
 
 	// FOV
 	MeshFOV=65
