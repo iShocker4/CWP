@@ -41,6 +41,9 @@ DefaultProperties
 	maxRecoilPitch=650
 	minRecoilPitch=650
 
+	// Match the vanilla single Deagle fire rate.
+	FireInterval(DEFAULT_FIREMODE)=+0.2
+
 	// Dual class
 	DualClass=class'CWP.CW_Pistol_DualDeagleEx'
 

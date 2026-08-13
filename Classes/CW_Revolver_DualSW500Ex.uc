@@ -12,7 +12,7 @@ simulated event SetWeapon()
 
 simulated function float GetReloadRateScale()
 {
-	return Super.GetReloadRateScale() * 0.6f; //0.75
+	return Super.GetReloadRateScale() * 0.55f; //0.6
 }
 /*
 function bool DenyPickupQuery(class<Inventory> ItemClass, Actor Pickup)
@@ -30,11 +30,11 @@ DefaultProperties
 	minRecoilPitch=850 //750
 	
 	// DEFAULT_FIREMODE
-	InstantHitDamage(DEFAULT_FIREMODE)=190.0
+	InstantHitDamage(DEFAULT_FIREMODE)=180.0
 	InstantHitDamageTypes(DEFAULT_FIREMODE)=class'Custom_KFDT_Ballistic_SW500Ex'
 
 	// ALTFIRE_FIREMODE
-	InstantHitDamage(ALTFIRE_FIREMODE)=190.0
+	InstantHitDamage(ALTFIRE_FIREMODE)=180.0
 	InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'Custom_KFDT_Ballistic_SW500Ex'
 	
 	// Single class

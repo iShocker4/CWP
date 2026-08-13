@@ -20,7 +20,7 @@ DefaultProperties
 	minRecoilPitch=850 //750
 	
 	// DEFAULT_FIREMODE
-	InstantHitDamage(DEFAULT_FIREMODE)=190.0
+	InstantHitDamage(DEFAULT_FIREMODE)=180.0
 	
 	// Dual class
 	DualClass=class'CWP.CW_Revolver_DualSW500Ex'

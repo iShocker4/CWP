@@ -83,7 +83,7 @@ DefaultProperties
 	WeaponProjectiles(ALTFIRE_FIREMODE)=class'KFProj_Bullet_RevolverSW500'
 	InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'CWP.Custom_KFDT_Ballistic_SW500Ex_AT'
 	FireInterval(ALTFIRE_FIREMODE)=+0.24
-	InstantHitDamage(ALTFIRE_FIREMODE)=190.0
+	InstantHitDamage(ALTFIRE_FIREMODE)=180.0
 	PenetrationPower(ALTFIRE_FIREMODE)=3.0
 	Spread(ALTFIRE_FIREMODE)=0.015
 

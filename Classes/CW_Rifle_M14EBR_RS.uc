@@ -270,7 +270,7 @@ DefaultProperties
 	minRecoilPitch=225 // 200
 
 	// DEFAULT_FIREMODE
-	InstantHitDamage(DEFAULT_FIREMODE)=121.0 //80
+	InstantHitDamage(DEFAULT_FIREMODE)=116.0 //80
 
 	// Laser sight
 	bIsLaserSightEnabled=true

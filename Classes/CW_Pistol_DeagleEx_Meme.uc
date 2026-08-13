@@ -11,6 +11,10 @@ DefaultProperties
 	// 650 RPM
 	FireInterval(DEFAULT_FIREMODE)=+0.0923077
 
+	// 50% lower recoil than the base Evil Deagle.
+	maxRecoilPitch=325
+	minRecoilPitch=325
+
 	// Link the Meme single and dual variants.
 	DualClass=class'CWP.CW_Pistol_DualDeagleEx_Meme'
 }
