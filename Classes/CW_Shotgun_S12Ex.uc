@@ -1,5 +1,16 @@
 class CW_Shotgun_S12Ex extends KFWeap_Shotgun_S12;
 
+// Reload 15% faster, with an additional 15% speed bonus while rounds remain.
+simulated function float GetReloadRateScale()
+{
+	if (AmmoCount[0] > 0)
+	{
+		return Super.GetReloadRateScale() * 0.70f;
+	}
+
+	return Super.GetReloadRateScale() * 0.85f;
+}
+
 // SetWeapon — ถูกเรียกเมื่ออาวุธถูก equip
 //   เรียก super แล้วปรับสกินจากอาวุธต้นฉบับ (S12)
 // พารามิเตอร์: ไม่มี

@@ -3,7 +3,7 @@
 //=============================================================================
 // ปืน Deagle เดี่ยว เวอร์ชันดัดแปลง
 // - ไม่มีกระสุนสำรองเริ่มเกม (InitialSpareMags=0)
-// - ปรับ recoil ให้รุนแรงขึ้น (650-650 จากปกติที่ต่างกัน)
+// - ใช้ recoil เท่ากับ vanilla (650 max / 550 min)
 // - เชื่อมโยงไปยังคลาส Dual ที่กำหนดเอง (CW_Pistol_DualDeagleEx)
 //=============================================================================
 
@@ -39,7 +39,7 @@ DefaultProperties
 
 	// Recoil
 	maxRecoilPitch=650
-	minRecoilPitch=650
+	minRecoilPitch=550
 
 	// Match the vanilla single Deagle fire rate.
 	FireInterval(DEFAULT_FIREMODE)=+0.2

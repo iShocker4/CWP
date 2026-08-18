@@ -1,5 +1,11 @@
 class CW_Shotgun_M4Ex extends KFWeap_Shotgun_M4;
 
+// Reload 15% faster.
+simulated function float GetReloadRateScale()
+{
+	return Super.GetReloadRateScale() * 0.85f;
+}
+
 // SetWeapon — ถูกเรียกเมื่ออาวุธถูก equip
 //   เรียก super แล้วปรับสกินจากอาวุธต้นฉบับ (M4 MS193 Professional)
 // พารามิเตอร์: ไม่มี
