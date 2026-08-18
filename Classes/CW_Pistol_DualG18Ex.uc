@@ -229,7 +229,7 @@ defaultproperties
 	SingleClass=class'CW_Pistol_G18CEx'
 
 	// Inventory / Grouping
-	InventorySize=8 //Weight Ammount
+	InventorySize=6 //Weight Ammount
 	GroupPriority=100
 	bCanThrow=true
 	bDropOnDeath=true

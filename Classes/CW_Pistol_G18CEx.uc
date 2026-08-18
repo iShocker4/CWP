@@ -131,7 +131,7 @@ defaultproperties
 
 	// Inventory / Grouping [FFERRANDO NEEDS TO BE RECHECKED FOR G18]
 	InventoryGroup=IG_Secondary
-	InventorySize=4 //Weight Ammount
+	InventorySize=3 //Weight Ammount
 	GroupPriority=100
 	bCanThrow=true
 	bDropOnDeath=true

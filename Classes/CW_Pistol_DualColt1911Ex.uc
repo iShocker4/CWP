@@ -25,7 +25,7 @@ DefaultProperties
 
 	// Recoil
 	maxRecoilPitch=450
-	minRecoilPitch=450
+	minRecoilPitch=400
 	
 	// Single class
 	SingleClass=class'CWP.CW_Pistol_Colt1911Ex'

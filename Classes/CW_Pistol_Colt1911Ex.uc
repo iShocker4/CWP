@@ -19,7 +19,7 @@ DefaultProperties
 
 	// Recoil
 	maxRecoilPitch=450
-	minRecoilPitch=450
+	minRecoilPitch=400
 	
 	// Dual class
 	DualClass=class'CWP.CW_Pistol_DualColt1911Ex'

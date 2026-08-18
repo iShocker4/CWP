@@ -28,7 +28,7 @@ DefaultProperties
 	KDeathVel=350
 	
 	KnockdownPower=25
-	StumblePower=50 //60
+	StumblePower=40 //60
 	GunHitPower=200
 	
 	WeaponDef=class'CWP.KFWeapDef_SW500Ex'

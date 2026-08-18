@@ -64,18 +64,18 @@ Support shotgun ทั้งหมดใช้ damage รวมต่อกา�
 
 | อาวุธ | การปรับแต่งปัจจุบัน |
 |---|---|
-| M1911 Ex | Recoil แนวตั้งแรงขึ้นเล็กน้อย, 343 RPM, penetration 1 |
-| Dual M1911 Ex | Recoil แนวตั้งแรงขึ้นเล็กน้อย, 600 RPM, penetration 1 |
-| M1911 AT | เพิ่ม right-click full-auto, 343 RPM, penetration default 1 / alt 0 |
-| Dual M1911 AT | เพิ่ม right-click full-auto, 600 RPM default / 500 RPM alt |
+| M1911 Ex | Recoil ตรงกับ vanilla (`450/400`), 343 RPM, penetration 1 |
+| Dual M1911 Ex | Recoil ตรงกับ vanilla (`450/400`), 600 RPM, penetration 1 |
+| M1911 AT | สืบทอด recoil vanilla, เพิ่ม right-click full-auto, 343 RPM, penetration default 1 / alt 0 |
+| Dual M1911 AT | สืบทอด recoil vanilla, เพิ่ม right-click full-auto, 600 RPM default / 500 RPM alt |
 | AutoMag Ex | 127 damage, 300 RPM, penetration 2, ไม่มี knockdown/stumble และมี gun hit 150 |
 | Dual AutoMag Ex | 167 damage ต่อกระสุน, 450 RPM, DPM รวมประมาณ 75,150, penetration 2, gun hit 150 |
 | Casull | 113 damage, 300 RPM, penetration 2, recoil คุมได้สำหรับพลัง damage และ heavy bash 300 |
 | Jackal & Casull | 156 damage ต่อกระสุน, 545.45 RPM, DPM รวมประมาณ 85,091, penetration 2, heavy bash 300 |
-| Glock 18C Ex | 40 damage, 800 RPM auto / 343 RPM single, recoil ด้านข้างลด 60%, reload เร็วขึ้น 20% เมื่อยังมีกระสุน / 10% เมื่อแม็กหมด |
-| Dual Glock 18C Ex | 40 damage ต่อกระสุน, 1200 RPM, recoil ด้านข้างลด 60%, reload เร็วขึ้น 20% เมื่อยังมีกระสุน / 10% เมื่อแม็กหมด |
-| Magnum Ex | 160 -> 180 damage, stumble 60 -> 50, 250 RPM, penetration 3, recoil แรงขึ้น |
-| Dual Magnum Ex | 160 -> 180 damage, stumble 60 -> 50, 316 RPM, penetration 3, reload เร็วขึ้น 45% |
+| Glock 18C Ex | 40 damage, weight 3, 800 RPM auto / 343 RPM single, recoil ด้านข้างลด 60%, reload เร็วขึ้น 20% เมื่อยังมีกระสุน / 10% เมื่อแม็กหมด |
+| Dual Glock 18C Ex | 40 damage ต่อกระสุน, weight 6, 1200 RPM, recoil ด้านข้างลด 60%, reload เร็วขึ้น 20% เมื่อยังมีกระสุน / 10% เมื่อแม็กหมด |
+| Magnum Ex | 160 -> 180 damage, stumble 60 -> 40, 250 RPM, penetration 3, recoil แรงขึ้น |
+| Dual Magnum Ex | 160 -> 180 damage, stumble 60 -> 40, 316 RPM, penetration 3, reload เร็วขึ้น 45% |
 | Magnum AT | เหมือน Magnum Ex และเพิ่ม right-click full-auto, 250 RPM |
 | Dual Magnum AT | เหมือน Dual Magnum Ex และเพิ่ม right-click full-auto, 316 RPM |
 
