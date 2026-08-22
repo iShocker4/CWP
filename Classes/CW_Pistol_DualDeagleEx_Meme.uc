@@ -9,6 +9,8 @@ DefaultProperties
 
 	// Ammo
 	MagazineCapacity[0]=24
+	SpareAmmoCapacity[0]=264
+	InitialSpareMags[0]=72
 
 	// 650 RPM for both fire modes.
 	FireInterval(DEFAULT_FIREMODE)=+0.0923077

@@ -35,8 +35,8 @@
 | Dual Deagle Ex | Reload เร็วขึ้น 20% เมื่อยังมีกระสุน, recoil ตรงกับ vanilla (`650/550`), fire interval `0.11` = ประมาณ 545 RPM ทั้ง default และ alt-fire |
 | Deagle AT | สืบทอด recoil/reload ของ Deagle Ex และ right-click ใช้สลับ full-auto, 300 RPM |
 | Dual Deagle AT | สืบทอด recoil/reload ของ Dual Deagle Ex และ right-click ใช้สลับ full-auto, 545 RPM |
-| Evil Deagle | รุ่น Meme แบบเดี่ยว, damage 115 ต่อกระสุน, 650 RPM, แม็ก 12 นัด, recoil `325/325` |
-| Dual Evil's Deagle | รุ่น Meme แบบคู่, damage 115 ต่อกระสุนทั้งสอง fire mode, 650 RPM, แม็ก 24 นัด, recoil `325/325` |
+| Evil Deagle | รุ่น Meme แบบเดี่ยว, damage 115 ต่อกระสุน, 350 RPM, แม็ก 12 นัด, reserve 132 นัด, recoil `325/325` |
+| Dual Evil's Deagle | รุ่น Meme แบบคู่, damage 115 ต่อกระสุนทั้งสอง fire mode, 650 RPM, แม็ก 24 นัด, reserve 264 นัด, recoil `325/325` |
 
 ค่า fire interval ของ Deagle ปกติและ Dual Deagle ถูกตรวจเทียบกับ source vanilla แล้ว โดยใช้ `0.20` และ `0.11` ตามลำดับ
 

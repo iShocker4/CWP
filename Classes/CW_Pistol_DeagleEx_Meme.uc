@@ -7,9 +7,11 @@ DefaultProperties
 
 	// Ammo
 	MagazineCapacity[0]=12
+	SpareAmmoCapacity[0]=132
+	InitialSpareMags[0]=36
 
-	// 650 RPM
-	FireInterval(DEFAULT_FIREMODE)=+0.0923077
+	// 350 RPM
+	FireInterval(DEFAULT_FIREMODE)=+0.1714300
 
 	// 50% lower recoil than the base Evil Deagle.
 	maxRecoilPitch=325
