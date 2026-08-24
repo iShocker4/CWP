@@ -1,0 +1,121 @@
+[h1]CustomWeapon (CWP)[/h1]
+Custom weapon package for [b]Killing Floor 2[/b] with adjusted weapon stats, custom damage types, alternate fire modes, weapon skins, and balance changes for regular and AT variants.
+
+[b]Mutator:[/b]
+[code]CWP.CWPMut[/code]
+
+[h1]Recent Balance Updates[/h1]
+
+[h2]Deagle[/h2]
+[list]
+[*][b]Deagle Ex / Dual Deagle Ex[/b] — Vanilla recoil restored: 650 max / 550 min. Fire rate matches vanilla: 300 RPM single / approximately 545 RPM dual.
+[*][b]Tactical reload[/b] — 20% faster while rounds remain in the magazine.
+[*][b]Evil Deagle[/b] — 115 damage, 350 RPM, 12-round magazine, 132 reserve rounds, reduced recoil.
+[*][b]Dual Evil's Deagle[/b] — 115 damage per bullet, 650 RPM, 24-round magazine, 264 reserve rounds, reduced recoil.
+[*][b]AT variants[/b] — Right-click toggles full-auto mode while retaining the matching Deagle fire rate and recoil.
+[/list]
+
+[h2]Support Shotguns[/h2]
+[list]
+[*][b]AA-12 Ex[/b] — 168 total damage per shot (+20%), reload 15% faster and 30% faster while rounds remain.
+[*][b]Double-Barreled Boomstick Ex[/b] — 275 single / 550 double total damage (+10%), reload 25% faster and 45% faster while rounds remain.
+[*][b]Elephant Gun Ex[/b] — 264 total damage per shot (+10%), reload 25% faster and 45% faster while rounds remain.
+[*][b]HZ12 Multi-Action Ex[/b] — 240 total damage per shot (+20%), reload 15% faster and 30% faster while rounds remain.
+[*][b]M4 Combat Shotgun Ex[/b] — 276 total damage per shot (+15%), reload 15% faster.
+[*][b]S12 Shockgun Ex[/b] — 235.2 shotgun damage (+20%), 240 alt-fire explosion damage (+20%), reload 15% faster and 30% faster while rounds remain.
+[/list]
+
+[h2]Other Recent Balance Changes[/h2]
+[list]
+[*][b]M1911 Ex / Dual M1911 Ex[/b] — Vanilla recoil restored: 450 max / 400 min. AT variants inherit the same recoil.
+[*][b]Glock 18C Ex[/b] — Inventory weight reduced to 3.
+[*][b]Dual Glock 18C Ex[/b] — Inventory weight reduced to 6.
+[*][b]Magnum / SW500[/b] — Damage 180 and stumble power reduced to 40. Dual reload is 45% faster.
+[*][b]M14 variants[/b] — ACOG and No Scope use 90 damage; RS uses 116 damage.
+[*][b]AF2011 Ex AT[/b] — Corrected shop name; displayed as [b]AF2011 Ex AT[/b].
+[*][b]HRG Crossbow Ex[/b] — Distinguished from the regular Crossbow Ex in the shop as [b]HRG Crossbow Ex[/b].
+[/list]
+
+[h1]Weapon List[/h1]
+
+[code]Item=CWP.KFWeapDef_AA12Ex
+Item=CWP.KFWeapDef_AF2011DualEx_AT
+Item=CWP.KFWeapDef_AF2011DualEx
+Item=CWP.KFWeapDef_AF2011Ex_AT
+Item=CWP.KFWeapDef_AF2011Ex
+Item=CWP.KFWeapDef_Ak12_Ex
+Item=CWP.KFWeapDef_AutoMagDual_Ex
+Item=CWP.KFWeapDef_AutoMag_Ex
+Item=CWP.KFWeapDef_Bullpup_Ex
+Item=CWP.KFWeapDef_CenterfireMB464Ex
+Item=CWP.KFWeapDef_CenterfireMB464Meme
+Item=CWP.KFWeapDef_Colt1911DualEx_AT
+Item=CWP.KFWeapDef_Colt1911DualEx
+Item=CWP.KFWeapDef_Colt1911Ex_AT
+Item=CWP.KFWeapDef_Colt1911Ex
+Item=CWP.KFWeapDef_CompoundBowEx
+Item=CWP.KFWeapDef_CrossbowEx
+Item=CWP.KFWeapDef_DeagleDualEx_AT
+Item=CWP.KFWeapDef_DeagleDualEx_Meme
+Item=CWP.KFWeapDef_DeagleDualEx
+Item=CWP.KFWeapDef_DeagleEx_AT
+Item=CWP.KFWeapDef_DeagleEx_Meme
+Item=CWP.KFWeapDef_DeagleEx
+Item=CWP.KFWeapDef_DoubleBarrelEx
+Item=CWP.KFWeapDef_DualJCEx
+Item=CWP.KFWeapDef_ElephantGunEx
+Item=CWP.KFWeapDef_FNFal_4xMeme
+Item=CWP.KFWeapDef_FNFal_4x
+Item=CWP.KFWeapDef_FNFalCM_2x
+Item=CWP.KFWeapDef_Hemogoblin_NoBleed_Ex
+Item=CWP.KFWeapDef_HRGCrossbowEx
+Item=CWP.KFWeapDef_HZ12Ex
+Item=CWP.KFWeapDef_JCEx
+Item=CWP.KFWeapDef_KrissEx
+Item=CWP.KFWeapDef_M107_Ex
+Item=CWP.KFWeapDef_M110_Ex
+Item=CWP.KFWeapDef_M14EBREx_RS
+Item=CWP.KFWeapDef_M14EBREx
+Item=CWP.KFWeapDef_M14EBR_IS_Ex
+Item=CWP.KFWeapDef_M24_Ex
+Item=CWP.KFWeapDef_M4Ex
+Item=CWP.KFWeapDef_MedicRifle_Ex
+Item=CWP.KFWeapDef_MedicSMG2_Ex
+Item=CWP.KFWeapDef_MG3Ex
+Item=CWP.KFWeapDef_MosinNagantEx
+Item=CWP.KFWeapDef_MP7Ex
+Item=CWP.KFWeapDef_P90Ex
+Item=CWP.KFWeapDef_Pistol_DualG18Ex
+Item=CWP.KFWeapDef_Pistol_G18CEx
+Item=CWP.KFWeapDef_S12Ex
+Item=CWP.KFWeapDef_SCAREx_Meme
+Item=CWP.KFWeapDef_SCAREx
+Item=CWP.KFWeapDef_SW500DualEx_AT
+Item=CWP.KFWeapDef_SW500DualEx
+Item=CWP.KFWeapDef_SW500Ex_AT
+Item=CWP.KFWeapDef_SW500Ex
+Item=CWP.KFWeapDef_SyringeArmor[/code]
+
+[h1]SkinsAdder Exceptions[/h1]
+
+The following custom weapons intentionally do not use vanilla skin replacement:
+
+[list]
+[*]AutoMag Ex and Dual AutoMag Ex
+[*]M107 Ex
+[*]M110 SASS Ex
+[*]M24 Ex
+[*]Casull and Jackal & Casull
+[*]Syringe Armor
+[/list]
+
+Evil Deagle single and dual variants use the Deagle skin mapping. M14 variants remain mapped to the vanilla M14 skin.
+
+[h1]Notes[/h1]
+
+[list]
+[*]Damage values for shotguns are shown as total damage per firing event in the descriptions; source damage is configured per pellet.
+[*]Reload bonuses that mention remaining rounds use the partial/tactical reload condition.
+[*]The package includes custom WeaponDefs, damage types, weapon classes, AT variants, and skin mappings.
+[*]Do not reupload this package without permission.
+[/list]
