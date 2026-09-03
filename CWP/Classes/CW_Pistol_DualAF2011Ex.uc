@@ -23,7 +23,7 @@ simulated event SetWeapon()
     SetTimer(0.25f, false, nameof(CheckUneven));
 }
 
-// GetReloadRateScale — รีโหลดเร็วขึ้น 20% ถ้ายิงไม่หมดแม็ก (ยังมีกระสุนเหลือ), 10% ถ้ายิงหมดแม็ก
+// GetReloadRateScale — รีโหลดเร็วขึ้น 20% ถ้ายิงไม่หมดแม็ก; ใช้ความเร็ว Vanilla เมื่อแม็กหมด
 // พารามิเตอร์: ไม่มี
 // คืนค่า: float - ตัวคูณความเร็วรีโหลด
 simulated function float GetReloadRateScale()
@@ -32,7 +32,7 @@ simulated function float GetReloadRateScale()
     {
         return Super.GetReloadRateScale() * 0.8; // ไม่หมดแม็ก: เร็วขึ้น 20%
     }
-    return Super.GetReloadRateScale() * 0.9; // หมดแม็ก: เร็วขึ้น 10%
+    return Super.GetReloadRateScale(); // หมดแม็ก: ความเร็ว Vanilla
 }
 
 // CheckUneven ? ???????????????????????????

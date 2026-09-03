@@ -42,7 +42,7 @@
 
 ### AF2011
 
-- `AF2011 Ex`: 316 RPM, penetration 1.5, ลด control power ของ knockdown/stumble/gun hit และมี reload เร็วขึ้น 20% เมื่อยังมีกระสุน / 10% เมื่อแม็กหมด
+- `AF2011 Ex`: 316 RPM, penetration 1.5, ลด control power ของ knockdown/stumble/gun hit และมี reload เร็วขึ้น 20% เมื่อยังมีกระสุน / ใช้ความเร็ว Vanilla เมื่อแม็กหมด
 - `Dual AF2011 Ex`: 462 RPM, penetration 1.5, ใช้ reload และ control-power behavior เดียวกัน
 - `AF2011 Ex AT`: ชื่อหน้าร้านคือ **AF2011 Ex AT**, เพิ่ม right-click full-auto และใช้ 316 RPM
 - `Dual AF2011 AT`: เพิ่ม right-click full-auto และใช้ 462 RPM
@@ -109,9 +109,9 @@ Support shotgun ทั้งหมดใช้ damage รวมต่อกา�
 |---|---|
 | Centerfire MB464 Ex | Damage 165 -> 180, Sharpshooter/Gunslinger reload เร็วขึ้น 20% เมื่อ perk reload skill ไม่ทำงาน, recoil แนวตั้งแรงขึ้นเล็กน้อย, draw/put-away เร็วขึ้น, 150 RPM |
 | Chole's SPX centerfire | Damage 165 -> 220, Sharpshooter reload เร็วขึ้น 50%, Gunslinger reload เร็วขึ้น 60%, empty-mag reload เร็วขึ้นอีก 8.25%, recoil แนวตั้งแรงขึ้นเล็กน้อย, draw/put-away เร็วขึ้น |
-| M14EBR (ACOG) | Damage 80 -> 90, recoil แนวตั้งแรงขึ้นเล็กน้อย, 273 RPM, penetration 2 |
-| Chloe's M14 MBR (RS) | Damage 80 -> 116, recoil `225/225`, Sharpshooter reload เร็วขึ้น 35% เมื่อ Tactical Reload ไม่ทำงาน, 273 RPM |
-| M14EBR No Scope | Damage 80 -> 90, default recoil `225/225`; ระหว่างกำลัง zoom-in recoil เป็น `320/320`, 273 RPM |
+| M14EBR (ACOG) | Damage 80 -> 90, pitch recoil `225/225`, horizontal yaw recoil inherited from vanilla `200/-200`, 273 RPM, penetration 2 |
+| Chloe's M14 MBR (RS) | Damage 80 -> 116, pitch recoil `225/225`, horizontal yaw recoil inherited from vanilla `200/-200`, Sharpshooter reload เร็วขึ้น 35% เมื่อ Tactical Reload ไม่ทำงาน, 273 RPM |
+| M14EBR No Scope | Damage 80 -> 90, default pitch recoil `225/225`; ระหว่างกำลัง zoom-in pitch recoil เป็น `320/320`; horizontal yaw recoil inherited from vanilla `200/-200`, 273 RPM |
 | M24 Ex | 400 damage, 70 RPM, penetration 2, bolt-action recoil หนักแต่เบากว่า M107, reload เร็วขึ้น 15% |
 | M107 Ex | 300 damage, 200 RPM, penetration 8, weight 10, แม็ก 10 นัด, recoil ใกล้ M99 แต่เบากว่าเล็กน้อย |
 | M110 SASS Ex | 138 damage, 300 RPM, penetration 2, weight 8, แม็ก 30 นัด, recoil หนักกว่า M14 แต่คุมได้สำหรับ rapid fire |

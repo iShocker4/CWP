@@ -31,9 +31,10 @@ Custom weapon package for [b]Killing Floor 2[/b] with adjusted weapon stats, cus
 [*][b]Glock 18C Ex[/b] — Inventory weight reduced to 3.
 [*][b]Dual Glock 18C Ex[/b] — Inventory weight reduced to 6.
 [*][b]Magnum / SW500[/b] — Damage 180 and stumble power reduced to 40. Dual reload is 45% faster.
-[*][b]M14 variants[/b] — ACOG and No Scope use 90 damage; RS uses 116 damage.
+[*][b]M14 variants[/b] — ACOG and No Scope use 90 damage; RS uses 116 damage. Horizontal yaw recoil remains inherited from vanilla.
 [*][b]AF2011 Ex AT[/b] — Corrected shop name; displayed as [b]AF2011 Ex AT[/b].
 [*][b]HRG Crossbow Ex[/b] — Distinguished from the regular Crossbow Ex in the shop as [b]HRG Crossbow Ex[/b].
+[*][b]AF2011 Ex / Dual AF2011 Ex[/b] — Reload is 20% faster while rounds remain; empty-magazine reload uses vanilla speed.
 [/list]
 
 [h1]Weapon List[/h1]
