@@ -106,6 +106,7 @@ DefaultProperties
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_Hemogoblin_NoBleed_Ex',DefaultWeapon=class'KFGameContent.KFWeap_Rifle_Hemogoblin'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_HRGCrossbowEx',DefaultWeapon=class'KFGameContent.KFWeap_Bow_Crossbow'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_MedicRifle_Ex',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_Medic'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_MedicRifleGrenadeLauncher_Ex',DefaultWeapon=class'KFGameContent.KFWeap_AssaultRifle_MedicRifleGrenadeLauncher'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_MedicSMG2_Ex',DefaultWeapon=class'KFGameContent.KFWeap_SMG_Medic'))
 
 	// SWAT

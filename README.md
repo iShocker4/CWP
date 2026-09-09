@@ -6,7 +6,7 @@
 
 ## ภาพรวม
 
-- มี active `WeaponDef` ทั้งหมด 57 รายการ
+- มี active `WeaponDef` ทั้งหมด 58 รายการ
 - อาวุธ custom ส่วนใหญ่ inherit จากอาวุธ KF2 เดิม แล้ว override เฉพาะ damage, recoil, fire interval, reload, ammo, control power หรือพฤติกรรมพิเศษที่ระบุไว้
 - รายละเอียดที่ผู้เล่นเห็นในร้านค้าอยู่ใน `..\Localization\INT\CWP.int`
 - ชื่อและคำอธิบายใน `.int` ต้องตรงกับ `WeaponClassPath` และ `GetItemDescription()` ของ WeaponDef
@@ -88,6 +88,7 @@ Support shotgun ทั้งหมดใช้ damage รวมต่อกา�
 | P90 Ex | 36 damage ต่อกระสุน (+20%), 857 RPM default / 600 RPM alt, penetration 0 |
 | Medic SMG Ex | Heal 15 -> 10, dart cost 40 -> 25, alt-fire ยิง 2 darts, ใช้ secondary slot และมีคำสั่ง `togglelockon` |
 | Medic Rifle Ex | Recoil แนวตั้งแรงขึ้นเล็กน้อย, มี `togglelockon`, 750 RPM default / 343 RPM alt |
+| Medic Grenade Rifle Ex | แม็กหลัก 30/210, grenade 1/9, full-auto primary 47 damage, grenade impact 50 / gas 60, ปิดการอัปเกรด |
 | Hemoclogger Ex | Damage 120 -> 100, แม็ก/กระสุนสำรอง 7/112 -> 6/56, heal 25 -> 20, DoT เปลี่ยนจาก bleeding เป็น toxic และมี `togglelockon` |
 
 ## Assault rifles และ LMG
@@ -187,13 +188,13 @@ Localization/INT/CWP.int  # อยู่นอก Git repo CWP แต่เป�
 
 ## การตรวจสอบล่าสุด
 
-- ตรวจ active WeaponDef: 57 รายการ
+- ตรวจ active WeaponDef: 58 รายการ
 - ตรวจ WeaponClassPath -> source class: ครบ
 - ตรวจ WeaponClassPath -> localization section: ครบ
 - ตรวจ AT WeaponDef -> localization section: 8/8
 - ตรวจชื่อ ItemName ซ้ำใน active WeaponDef: ไม่พบ
 - ตรวจ `CWP.int`: UTF-16 LE BOM ถูกต้อง
 - ตรวจ `git diff --check`: ผ่าน
-- ยังไม่ได้ compile ในการอัปเดตเอกสารนี้
+- Compile CWP: ผ่าน 0 errors, 1 warning เดิมใน `CW_Shotgun_S12Ex.uc`
 
 หมายเหตุ: `CWP.int` มี section legacy บางรายการที่ไม่มี active WeaponDef เช่น `CW_SMG_Medic_Ex`; section เหล่านี้ไม่ได้ถูกนับเป็นอาวุธ active ในตารางด้านบน

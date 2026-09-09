@@ -81,6 +81,7 @@ Item=CWP.KFWeapDef_M14EBR_IS_Ex
 Item=CWP.KFWeapDef_M24_Ex
 Item=CWP.KFWeapDef_M4Ex
 Item=CWP.KFWeapDef_MedicRifle_Ex
+Item=CWP.KFWeapDef_MedicRifleGrenadeLauncher_Ex
 Item=CWP.KFWeapDef_MedicSMG2_Ex
 Item=CWP.KFWeapDef_MG3Ex
 Item=CWP.KFWeapDef_MosinNagantEx
