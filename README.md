@@ -88,7 +88,7 @@ Support shotgun ทั้งหมดใช้ damage รวมต่อกา�
 | P90 Ex | 36 damage ต่อกระสุน (+20%), 857 RPM default / 600 RPM alt, penetration 0 |
 | Medic SMG Ex | Heal 15 -> 10, dart cost 40 -> 25, alt-fire ยิง 2 darts, ใช้ secondary slot และมีคำสั่ง `togglelockon` |
 | Medic Rifle Ex | Recoil แนวตั้งแรงขึ้นเล็กน้อย, มี `togglelockon`, 750 RPM default / 343 RPM alt |
-| Medic Grenade Rifle Ex | แม็กหลัก 30/210, grenade 1/9, full-auto primary 47 damage, grenade impact 50 / gas 60, ปิดการอัปเกรด |
+| Medic Grenade Rifle Ex | แม็กหลัก 30/210, grenade 1/9, full-auto primary 47 damage, grenade impact 50 / gas 20, ปิดการอัปเกรดและไม่สะสม rage กับ Large Zed |
 | Hemoclogger Ex | Damage 120 -> 100, แม็ก/กระสุนสำรอง 7/112 -> 6/56, heal 25 -> 20, DoT เปลี่ยนจาก bleeding เป็น toxic และมี `togglelockon` |
 
 ## Assault rifles และ LMG
