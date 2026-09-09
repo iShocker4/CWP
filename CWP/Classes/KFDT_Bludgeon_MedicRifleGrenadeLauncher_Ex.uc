@@ -4,5 +4,6 @@ class KFDT_Bludgeon_MedicRifleGrenadeLauncher_Ex extends KFDT_Bludgeon_MedicRifl
 
 defaultproperties
 {
+    bCanEnrage=false
     WeaponDef=class'CWP.KFWeapDef_MedicRifleGrenadeLauncher_Ex'
 }

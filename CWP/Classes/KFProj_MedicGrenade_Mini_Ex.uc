@@ -6,6 +6,7 @@ defaultproperties
     MyDamageType=class'CWP.KFDT_Ballistic_MedicRifleGrenadeLauncherImpact_Ex'
 
     Begin Object Name=ExploTemplate0
+        Damage=20.0
         MyDamageType=class'CWP.KFDT_Toxic_MedicGrenadeLauncher_Ex'
     End Object
 }
