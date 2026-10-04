@@ -88,14 +88,38 @@ simulated function InstantFireClient()
 simulated function ProcessInstantHitEx(byte FiringMode, ImpactInfo Impact, optional int NumHits, optional out float OutPenetrationValue, optional int ImpactNum)
 {
     local KFPawn_Monster HitMonster;
+    local KFPerk InstigatorPerk;
+    local bool bWasHeadShot;
+    local bool bWasAlreadyHeadShotThisFrame;
 
     HitMonster = KFPawn_Monster(Impact.HitActor);
-    if (HitMonster != None
+    bWasHeadShot = HitMonster != None
         && HitMonster.CanCountHeadshots()
-        && HitMonster.GetHitZoneIndex(Impact.HitInfo.BoneName) == HZI_HEAD
-        && HitMonster.LastHeadShotReceivedTime == WorldInfo.TimeSeconds)
+        && HitMonster.GetHitZoneIndex(Impact.HitInfo.BoneName) == HZI_HEAD;
+    bWasAlreadyHeadShotThisFrame = bWasHeadShot
+        && HitMonster.LastHeadShotReceivedTime == WorldInfo.TimeSeconds;
+
+    if (bWasAlreadyHeadShotThisFrame)
     {
         HitMonster.LastHeadShotReceivedTime = -1.f;
+    }
+
+    // The first AF impact can kill a trash zed before the paired impact is
+    // processed.  The normal perk hook requires a live target, so count the
+    // paired headshot directly when this same-frame marker reaches a dead
+    // target.  If the target is still alive, the normal hook below counts it
+    // and this branch stays inactive, keeping the total at exactly two.
+    if (bWasAlreadyHeadShotThisFrame
+        && HitMonster != None
+        && !HitMonster.IsAliveAndWell())
+    {
+        InstigatorPerk = GetPerk();
+        if (InstigatorPerk != None && InstigatorPerk.GetIsHeadShotComboActive())
+        {
+            InstigatorPerk.AddToHeadShotCombo(
+                class<KFDamageType>(InstantHitDamageTypes[FiringMode]),
+                HitMonster);
+        }
     }
 
     super.ProcessInstantHitEx(FiringMode, Impact, NumHits, OutPenetrationValue, ImpactNum);
