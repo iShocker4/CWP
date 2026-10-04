@@ -28,6 +28,10 @@ DefaultProperties
     InstantHitDamageTypes(DEFAULT_FIREMODE)=class'CWP.KFDT_Ballistic_AF2011ExEU'
     InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'CWP.KFDT_Ballistic_AF2011ExEU'
 
+    // Keep the AFEx attachment archetype explicitly so the EU variant uses its TracerInfos.
+    AttachmentArchetypeName="AF2011_Custom_Ex.Wep_AF2001_3P_Ex"
+    AttachmentArchetype=KFWeaponAttachment'AF2011_Custom_Ex.Wep_AF2001_3P_Ex'
+
     maxRecoilPitch=650
     minRecoilPitch=650
     maxRecoilYaw=225

@@ -29,6 +29,10 @@ DefaultProperties
 
     SingleClass=class'CWP.CW_Pistol_AF2011ExEU'
 
+    // Keep the AFEx attachment archetype explicitly so the EU variant uses its TracerInfos.
+    AttachmentArchetypeName="AF2011_Custom_Ex.Wep_Dual_AF2001_3P_Ex"
+    AttachmentArchetype=KFWeapAttach_DualBase'AF2011_Custom_Ex.Wep_Dual_AF2001_3P_Ex'
+
     // EU recoil range from the balance sheet.
     maxRecoilPitch=650
     minRecoilPitch=650
