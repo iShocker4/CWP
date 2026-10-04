@@ -2,11 +2,11 @@
 
 เอกสารนี้สรุปอาวุธ custom ในแพ็กเกจ `CWP` และค่าที่ถูกปรับแต่งใน source ปัจจุบัน โดยอ้างอิงจาก `Classes/`, `KFWeapDef_*.uc` และ localization file `Localization/INT/CWP.int` ที่อยู่ด้านนอกโฟลเดอร์ Git ของแพ็กเกจนี้
 
-สถานะเอกสาร: 18 สิงหาคม 2026
+สถานะเอกสาร: 4 ตุลาคม 2026
 
 ## ภาพรวม
 
-- มี active `WeaponDef` ทั้งหมด 58 รายการ
+- มี active `WeaponDef` ทั้งหมด 62 รายการ
 - อาวุธ custom ส่วนใหญ่ inherit จากอาวุธ KF2 เดิม แล้ว override เฉพาะ damage, recoil, fire interval, reload, ammo, control power หรือพฤติกรรมพิเศษที่ระบุไว้
 - รายละเอียดที่ผู้เล่นเห็นในร้านค้าอยู่ใน `..\Localization\INT\CWP.int`
 - ชื่อและคำอธิบายใน `.int` ต้องตรงกับ `WeaponClassPath` และ `GetItemDescription()` ของ WeaponDef
@@ -32,7 +32,9 @@
 | อาวุธ | การปรับแต่ง |
 |---|---|
 | Deagle Ex | Reload เร็วขึ้น 20% เมื่อยังมีกระสุน, recoil ตรงกับ vanilla (`max/min recoil 650/550`), fire interval `0.20` = 300 RPM |
+| Deagle Ex EU | รุ่น EU แยกจาก Deagle Ex, recoil แนวตั้ง `650/650`, reload เร็วขึ้น 20% เมื่อยังมีกระสุน / ช้าลง 20% เมื่อแม็กหมด |
 | Dual Deagle Ex | Reload เร็วขึ้น 20% เมื่อยังมีกระสุน, recoil ตรงกับ vanilla (`650/550`), fire interval `0.11` = ประมาณ 545 RPM ทั้ง default และ alt-fire |
+| Dual Deagle Ex EU | รุ่น EU แยกจาก Dual Deagle Ex, fire interval `0.12` = 500 RPM, recoil แนวตั้ง `650/650`, reload เร็วขึ้น 20% เมื่อยังมีกระสุน / ช้าลง 20% เมื่อแม็กหมด |
 | Deagle AT | สืบทอด recoil/reload ของ Deagle Ex และ right-click ใช้สลับ full-auto, 300 RPM |
 | Dual Deagle AT | สืบทอด recoil/reload ของ Dual Deagle Ex และ right-click ใช้สลับ full-auto, 545 RPM |
 | Evil Deagle | รุ่น Meme แบบเดี่ยว, damage 115 ต่อกระสุน, 350 RPM, แม็ก 12 นัด, reserve 132 นัด, recoil `325/325` |
@@ -43,7 +45,9 @@
 ### AF2011
 
 - `AF2011 Ex`: 316 RPM, penetration 1.5, ลด control power ของ knockdown/stumble/gun hit และมี reload เร็วขึ้น 20% เมื่อยังมีกระสุน / ใช้ความเร็ว Vanilla เมื่อแม็กหมด
+- `AF2011 Ex EU`: รุ่น EU แยกจาก AF2011 Ex, recoil แนวตั้ง `650/650` และแนวนอน `-225 ถึง 225`, reload เร็วขึ้น 20% เมื่อยังมีกระสุน / ช้าลง 35% เมื่อแม็กหมด และมีตัวคูณ slowdown เพิ่ม 5% ตามโมเดล EU
 - `Dual AF2011 Ex`: 462 RPM, penetration 1.5, ใช้ reload และ control-power behavior เดียวกัน
+- `Dual AF2011 Ex EU`: รุ่น EU แยกจาก Dual AF2011 Ex, ราคา `1700`, recoil แนวตั้ง `650/650` และแนวนอน `-225 ถึง 225`, reload เร็วขึ้น 20% เมื่อยังมีกระสุน / ช้าลง 35% เมื่อแม็กหมด และมีตัวคูณ slowdown เพิ่ม 5% ตามโมเดล EU
 - `AF2011 Ex AT`: ชื่อหน้าร้านคือ **AF2011 Ex AT**, เพิ่ม right-click full-auto และใช้ 316 RPM
 - `Dual AF2011 AT`: เพิ่ม right-click full-auto และใช้ 462 RPM
 
@@ -188,13 +192,14 @@ Localization/INT/CWP.int  # อยู่นอก Git repo CWP แต่เป�
 
 ## การตรวจสอบล่าสุด
 
-- ตรวจ active WeaponDef: 58 รายการ
+- ตรวจ active WeaponDef: 62 รายการ
 - ตรวจ WeaponClassPath -> source class: ครบ
 - ตรวจ WeaponClassPath -> localization section: ครบ
+- ตรวจ EU DamageType -> EU WeaponDef สำหรับ scoreboard/match stats: 4/4
 - ตรวจ AT WeaponDef -> localization section: 8/8
 - ตรวจชื่อ ItemName ซ้ำใน active WeaponDef: ไม่พบ
 - ตรวจ `CWP.int`: UTF-16 LE BOM ถูกต้อง
 - ตรวจ `git diff --check`: ผ่าน
-- Compile CWP: ผ่าน 0 errors, 1 warning เดิมใน `CW_Shotgun_S12Ex.uc`
+- Compile CWP: ผ่าน 0 errors, 37 warnings จาก asset/default property เดิม; ไม่พบ warning จาก class EU ใหม่
 
 หมายเหตุ: `CWP.int` มี section legacy บางรายการที่ไม่มี active WeaponDef เช่น `CW_SMG_Medic_Ex`; section เหล่านี้ไม่ได้ถูกนับเป็นอาวุธ active ในตารางด้านบน

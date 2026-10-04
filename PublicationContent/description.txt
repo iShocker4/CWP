@@ -10,6 +10,8 @@ Custom weapon package for [b]Killing Floor 2[/b] with adjusted weapon stats, cus
 [list]
 [*][b]Deagle Ex / Dual Deagle Ex[/b] — Vanilla recoil restored: 650 max / 550 min. Fire rate matches vanilla: 300 RPM single / approximately 545 RPM dual.
 [*][b]Tactical reload[/b] — 20% faster while rounds remain in the magazine.
+[*][b]Deagle Ex EU[/b] — Separate EU balance variant: tactical reload 20% faster while rounds remain and empty reload 20% slower; vertical recoil fixed at 650/650.
+[*][b]Dual Deagle Ex EU[/b] — Separate EU balance variant: 500 RPM with vertical recoil fixed at 650/650; tactical reload 20% faster while rounds remain and empty reload 20% slower.
 [*][b]Evil Deagle[/b] — 115 damage, 350 RPM, 12-round magazine, 132 reserve rounds, reduced recoil.
 [*][b]Dual Evil's Deagle[/b] — 115 damage per bullet, 650 RPM, 24-round magazine, 264 reserve rounds, reduced recoil.
 [*][b]AT variants[/b] — Right-click toggles full-auto mode while retaining the matching Deagle fire rate and recoil.
@@ -35,6 +37,8 @@ Custom weapon package for [b]Killing Floor 2[/b] with adjusted weapon stats, cus
 [*][b]AF2011 Ex AT[/b] — Corrected shop name; displayed as [b]AF2011 Ex AT[/b].
 [*][b]HRG Crossbow Ex[/b] — Distinguished from the regular Crossbow Ex in the shop as [b]HRG Crossbow Ex[/b].
 [*][b]AF2011 Ex / Dual AF2011 Ex[/b] — Reload is 20% faster while rounds remain; empty-magazine reload uses vanilla speed.
+[*][b]AF2011 Ex EU[/b] — Separate EU balance variant: reload 20% faster while rounds remain, 35% slower on empty, plus the modeled 5% AF2011 reload slowdown; recoil uses vertical 650/650 and horizontal -225/225.
+[*][b]Dual AF2011 Ex EU[/b] — Separate EU balance variant: price 1700, vertical recoil 650/650, horizontal recoil -225/225, reload 20% faster while rounds remain, 35% slower on empty, plus the modeled 5% AF2011 reload slowdown.
 [/list]
 
 [h1]Weapon List[/h1]
@@ -42,8 +46,10 @@ Custom weapon package for [b]Killing Floor 2[/b] with adjusted weapon stats, cus
 [code]Item=CWP.KFWeapDef_AA12Ex
 Item=CWP.KFWeapDef_AF2011DualEx_AT
 Item=CWP.KFWeapDef_AF2011DualEx
+Item=CWP.KFWeapDef_AF2011DualExEU
 Item=CWP.KFWeapDef_AF2011Ex_AT
 Item=CWP.KFWeapDef_AF2011Ex
+Item=CWP.KFWeapDef_AF2011ExEU
 Item=CWP.KFWeapDef_Ak12_Ex
 Item=CWP.KFWeapDef_AutoMagDual_Ex
 Item=CWP.KFWeapDef_AutoMag_Ex
@@ -59,9 +65,11 @@ Item=CWP.KFWeapDef_CrossbowEx
 Item=CWP.KFWeapDef_DeagleDualEx_AT
 Item=CWP.KFWeapDef_DeagleDualEx_Meme
 Item=CWP.KFWeapDef_DeagleDualEx
+Item=CWP.KFWeapDef_DeagleDualExEU
 Item=CWP.KFWeapDef_DeagleEx_AT
 Item=CWP.KFWeapDef_DeagleEx_Meme
 Item=CWP.KFWeapDef_DeagleEx
+Item=CWP.KFWeapDef_DeagleExEU
 Item=CWP.KFWeapDef_DoubleBarrelEx
 Item=CWP.KFWeapDef_DualJCEx
 Item=CWP.KFWeapDef_ElephantGunEx

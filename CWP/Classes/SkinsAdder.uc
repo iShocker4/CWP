@@ -62,11 +62,15 @@ DefaultProperties
 
 	// Gunslinger
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011Ex',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_AF2011'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011ExEU',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_AF2011'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011DualEx',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualAF2011'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011DualExEU',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualAF2011'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011Ex_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_AF2011'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_AF2011DualEx_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualAF2011'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleEx',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_Deagle'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleExEU',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_Deagle'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleDualEx',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualDeagle'))
+	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleDualExEU',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualDeagle'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleEx_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_Deagle'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleDualEx_AT',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_DualDeagle'))
 	ReplacementArray.Add((CustomWeapDef=class'CWP.KFWeapDef_DeagleEx_Meme',DefaultWeapon=class'KFGameContent.KFWeap_Pistol_Deagle'))
