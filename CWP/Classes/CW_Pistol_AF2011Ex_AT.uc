@@ -24,7 +24,15 @@ reliable client function ClientSetAltFire(bool bAltFire)
 	bUseAltFireMode = bAltFire;
 }
 
+// Keep the AT firing-mode selection while preserving the AF2011's paired
+// impacts.  The original AT override performed only one instant-hit trace.
 simulated function InstantFireClient()
+{
+    InstantFireClientSingleImpact();
+    InstantFireClientSingleImpact();
+}
+
+simulated function InstantFireClientSingleImpact()
 {
 	local vector StartTrace, EndTrace;
 	local rotator AimRot;

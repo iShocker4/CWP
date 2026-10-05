@@ -39,6 +39,7 @@ Custom weapon package for [b]Killing Floor 2[/b] with adjusted weapon stats, cus
 [*][b]AF2011 Ex / Dual AF2011 Ex[/b] — Reload is 20% faster while rounds remain; empty-magazine reload uses vanilla speed.
 [*][b]AF2011 Ex EU[/b] — Separate EU balance variant: reload 20% faster while rounds remain, 35% slower on empty, plus the modeled 5% AF2011 reload slowdown; recoil uses vertical 650/650 and horizontal -225/225.
 [*][b]Dual AF2011 Ex EU[/b] — Separate EU balance variant: price 1700, vertical recoil 650/650, horizontal recoil -225/225, reload 20% faster while rounds remain, 35% slower on empty, plus the modeled 5% AF2011 reload slowdown.
+[*][b]All AF2011 Ex variants[/b] — Each shot uses paired impacts. With Gunslinger's Rack 'em Up / Rhythm Method active, paired headshots count as 2 stacks even when the first impact kills a Trash Zed; bodyshots do not add stacks.
 [/list]
 
 [h1]Weapon List[/h1]

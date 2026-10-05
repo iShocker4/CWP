@@ -132,11 +132,11 @@ defaultproperties
 
     // DEFAULT_FIREMODE
     WeaponFireTypes(DEFAULT_FIREMODE)=EWFT_InstantHit
-    InstantHitDamageTypes(DEFAULT_FIREMODE)=class'KFDT_Ballistic_AF2011Ex'
+    InstantHitDamageTypes(DEFAULT_FIREMODE)=class'KFDT_Ballistic_AF2011DualEx'
 
     // ALTFIRE_FIREMODE
     WeaponFireTypes(ALTFIRE_FIREMODE)=EWFT_InstantHit
-    InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'KFDT_Ballistic_AF2011Ex'
+    InstantHitDamageTypes(ALTFIRE_FIREMODE)=class'KFDT_Ballistic_AF2011DualEx'
 
     // Inventory / Grouping
     GroupPriority=50

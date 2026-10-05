@@ -1,14 +1,14 @@
 # CWP — CustomWeapon
 
-เอกสารนี้สรุปอาวุธ custom ในแพ็กเกจ `CWP` และค่าที่ถูกปรับแต่งใน source ปัจจุบัน โดยอ้างอิงจาก `Classes/`, `KFWeapDef_*.uc` และ localization file `Localization/INT/CWP.int` ที่อยู่ด้านนอกโฟลเดอร์ Git ของแพ็กเกจนี้
+เอกสารนี้สรุปอาวุธ custom ในแพ็กเกจ `CWP` และค่าที่ถูกปรับแต่งใน source ปัจจุบัน โดยอ้างอิงจาก `CWP/Classes/`, `KFWeapDef_*.uc` และ localization file `Localization/INT/CWP.int` ซึ่งอยู่ที่ root ของ repo นอกโฟลเดอร์แพ็กเกจ `CWP`
 
-สถานะเอกสาร: 4 ตุลาคม 2026
+สถานะเอกสาร: 5 ตุลาคม 2026
 
 ## ภาพรวม
 
 - มี active `WeaponDef` ทั้งหมด 62 รายการ
 - อาวุธ custom ส่วนใหญ่ inherit จากอาวุธ KF2 เดิม แล้ว override เฉพาะ damage, recoil, fire interval, reload, ammo, control power หรือพฤติกรรมพิเศษที่ระบุไว้
-- รายละเอียดที่ผู้เล่นเห็นในร้านค้าอยู่ใน `..\Localization\INT\CWP.int`
+- รายละเอียดที่ผู้เล่นเห็นในร้านค้าอยู่ใน `Localization/INT/CWP.int`
 - ชื่อและคำอธิบายใน `.int` ต้องตรงกับ `WeaponClassPath` และ `GetItemDescription()` ของ WeaponDef
 - ตารางด้านล่างใช้ damage รวมต่อหนึ่งการยิงสำหรับ shotgun เพื่อให้อ่านง่าย ไม่ใช่ damage ต่อ pellet
 
@@ -46,10 +46,21 @@
 
 - `AF2011 Ex`: 316 RPM, penetration 1.5, ลด control power ของ knockdown/stumble/gun hit และมี reload เร็วขึ้น 20% เมื่อยังมีกระสุน / ใช้ความเร็ว Vanilla เมื่อแม็กหมด
 - `AF2011 Ex EU`: รุ่น EU แยกจาก AF2011 Ex, recoil แนวตั้ง `650/650` และแนวนอน `-225 ถึง 225`, reload เร็วขึ้น 20% เมื่อยังมีกระสุน / ช้าลง 35% เมื่อแม็กหมด และมีตัวคูณ slowdown เพิ่ม 5% ตามโมเดล EU
-- `Dual AF2011 Ex`: 462 RPM, penetration 1.5, ใช้ reload และ control-power behavior เดียวกัน
+- `Dual AF2011 Ex`: 462 RPM, penetration 1.5, ใช้ reload และ control-power behavior เดียวกัน และมี DamageType แยกสำหรับ scoreboard
 - `Dual AF2011 Ex EU`: รุ่น EU แยกจาก Dual AF2011 Ex, ราคา `1700`, recoil แนวตั้ง `650/650` และแนวนอน `-225 ถึง 225`, reload เร็วขึ้น 20% เมื่อยังมีกระสุน / ช้าลง 35% เมื่อแม็กหมด และมีตัวคูณ slowdown เพิ่ม 5% ตามโมเดล EU
-- `AF2011 Ex AT`: ชื่อหน้าร้านคือ **AF2011 Ex AT**, เพิ่ม right-click full-auto และใช้ 316 RPM
-- `Dual AF2011 AT`: เพิ่ม right-click full-auto และใช้ 462 RPM
+- `AF2011 Ex AT`: ชื่อหน้าร้านคือ **AF2011 Ex AT**, เพิ่ม right-click full-auto, ใช้ 316 RPM และยังยิง paired impacts สองชุดต่อการกดหนึ่งครั้ง
+- `Dual AF2011 AT`: เพิ่ม right-click full-auto, ใช้ 462 RPM และมี DamageType แยกสำหรับ scoreboard
+
+AF2011 Ex ทุก variant ทั้ง single/dual, normal/EU/AT ยิง instant-hit เป็น paired impacts สองชุดต่อการกดหนึ่งครั้ง เมื่อ Gunslinger เปิด Rack 'em Up / Rhythm Method และยิง headshot จะนับเป็น stack x2 แม้ impact แรกจะฆ่า Trash Zed ก่อน impact คู่จะถูกประมวลผล ส่วน bodyshot จะไม่เพิ่ม stack
+
+| Variant | Weapon class | WeaponDef | DamageType สำหรับ scoreboard |
+|---|---|---|---|
+| AF2011 Ex | `CW_Pistol_AF2011Ex` | `KFWeapDef_AF2011Ex` | `KFDT_Ballistic_AF2011Ex` |
+| Dual AF2011 Ex | `CW_Pistol_DualAF2011Ex` | `KFWeapDef_AF2011DualEx` | `KFDT_Ballistic_AF2011DualEx` |
+| AF2011 Ex EU | `CW_Pistol_AF2011ExEU` | `KFWeapDef_AF2011ExEU` | `KFDT_Ballistic_AF2011ExEU` |
+| Dual AF2011 Ex EU | `CW_Pistol_DualAF2011ExEU` | `KFWeapDef_AF2011DualExEU` | `KFDT_Ballistic_AF2011DualExEU` |
+| AF2011 Ex AT | `CW_Pistol_AF2011Ex_AT` | `KFWeapDef_AF2011Ex_AT` | `KFDT_Ballistic_AF2011Ex_AT` |
+| Dual AF2011 AT | `CW_Pistol_DualAF2011Ex_AT` | `KFWeapDef_AF2011DualEx_AT` | `KFDT_Ballistic_AF2011DualEx_AT` |
 
 ## Support shotguns
 
@@ -184,10 +195,12 @@ CWP/
 │  ├─ KFWeapDef_*.uc       # trader/WeaponDef mapping
 │  ├─ KFDT_*.uc            # package-owned damage types
 │  └─ SkinsAdder.uc        # vanilla skin replacement mapping
-├─ Weapons/                # package assets/build-related content
-└─ README.md
+└─ Weapons/                # package assets/build-related content
 
-Localization/INT/CWP.int  # อยู่นอก Git repo CWP แต่เป็น localization ที่ใช้งานจริง
+README.md
+
+Localization/INT/CWP.int           # localization ที่ใช้งานจริง
+PublicationContent/description.txt # workshop description และรายการ WeaponDef
 ```
 
 ## การตรวจสอบล่าสุด
@@ -196,10 +209,13 @@ Localization/INT/CWP.int  # อยู่นอก Git repo CWP แต่เป�
 - ตรวจ WeaponClassPath -> source class: ครบ
 - ตรวจ WeaponClassPath -> localization section: ครบ
 - ตรวจ EU DamageType -> EU WeaponDef สำหรับ scoreboard/match stats: 4/4
+- ตรวจ AF2011Ex variants: source/WeaponDef/localization/workshop item: 6/6
+- ตรวจ AF2011Ex DamageType -> matching WeaponDef สำหรับ scoreboard/match stats: 6/6
+- ตรวจ AF2011Ex paired-impact path: single/dual/AT รวมครบทุก variant
 - ตรวจ AT WeaponDef -> localization section: 8/8
 - ตรวจชื่อ ItemName ซ้ำใน active WeaponDef: ไม่พบ
 - ตรวจ `CWP.int`: UTF-16 LE BOM ถูกต้อง
 - ตรวจ `git diff --check`: ผ่าน
-- Compile CWP: ผ่าน 0 errors, 37 warnings จาก asset/default property เดิม; ไม่พบ warning จาก class EU ใหม่
+- Compile CWP: ผ่าน 0 errors, 1 warning จาก `CW_Shotgun_S12Ex.uc(30)` ซึ่งเป็น warning เดิมเรื่อง `ExplosionTemplate.Damage`; ไม่พบ warning จาก AF2011 class หรือ DamageType ใหม่
 
 หมายเหตุ: `CWP.int` มี section legacy บางรายการที่ไม่มี active WeaponDef เช่น `CW_SMG_Medic_Ex`; section เหล่านี้ไม่ได้ถูกนับเป็นอาวุธ active ในตารางด้านบน
